@@ -1,0 +1,8 @@
+site_name: 'Production Management Wiki'
+
+theme: readthedocs
+
+docs_dir: 'docs'
+
+pages:
+- ['index.md', 'Home']
