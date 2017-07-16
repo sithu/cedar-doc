@@ -1,6 +1,5 @@
-# Welcome to Production Management System
+# Production Management System Wiki
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
 
 ## Pre-requisites 
 
@@ -8,9 +7,10 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 * Either a static or dynamic IP assigned to the server.
 * The network or router must allow TCP port 5000 for incoming traffic to the server.
 
+
 ## Installation
 
-* `git clone https://github.com/sithu/` - Checkout the source code.
+* `git clone https://github.com/sithu/prod-mgmt` - Checkout the source code.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
