@@ -1,4 +1,4 @@
-# Production Management System - User Manual
+# Production Management System Wiki
 
 
 ## Pre-requisites 
@@ -6,7 +6,6 @@
 * A reliable Internet connection on the server that you are installing.
 * Either a static or dynamic IP assigned to the server.
 * The network or router must allow TCP port 5000 for incoming traffic to the server.
-* `python -version` - Check to see the server has installed Python 2.7.
 
 
 ## Installation
@@ -16,6 +15,11 @@
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
 
+## Project layout
 
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
 
 

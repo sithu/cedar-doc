@@ -1,4 +1,4 @@
-site_name: 'Production Management Wiki'
+site_name: 'Production Management'
 
 theme: readthedocs
 
@@ -6,3 +6,18 @@ docs_dir: 'docs'
 
 pages:
 - ['index.md', 'Home']
+- ['getting-started.md', 'Getting Started']
+- ['user.md', 'User Setup']
+- ['machine.md', 'Machine Setup']
+- ['product.md', 'Product Setup']
+- ['shift.md', 'Shift Setup']
+- ['team.md', 'Team (Schedule) Setup']
+- ['order.md', 'Order and Production Entry']
+- ['history.md', 'History for Reporting']
+- ['dashboard.md', 'Dashboard']
+- ['db.md', 'Database Backup']
+
+
+
+
+
