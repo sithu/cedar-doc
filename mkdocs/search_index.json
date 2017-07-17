@@ -2,17 +2,17 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Production Management System Wiki\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Production Management System - User Manual\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\npython -version\n - Check to see the server has installed Python 2.7.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.", 
             "title": "Home"
         }, 
         {
-            "location": "/#production-management-system-wiki", 
+            "location": "/#production-management-system-user-manual", 
             "text": "", 
-            "title": "Production Management System Wiki"
+            "title": "Production Management System - User Manual"
         }, 
         {
             "location": "/#pre-requisites", 
-            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.", 
+            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.  python -version  - Check to see the server has installed Python 2.7.", 
             "title": "Pre-requisites"
         }, 
         {
@@ -21,9 +21,94 @@
             "title": "Installation"
         }, 
         {
-            "location": "/#project-layout", 
+            "location": "/getting-started/", 
+            "text": "Production Management System Wiki\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/getting-started/#production-management-system-wiki", 
+            "text": "", 
+            "title": "Production Management System Wiki"
+        }, 
+        {
+            "location": "/getting-started/#pre-requisites", 
+            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.", 
+            "title": "Pre-requisites"
+        }, 
+        {
+            "location": "/getting-started/#installation", 
+            "text": "git clone https://github.com/sithu/prod-mgmt  - Checkout the source code.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/getting-started/#project-layout", 
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
             "title": "Project layout"
+        }, 
+        {
+            "location": "/user/", 
+            "text": "Production Management System Wiki\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "User Setup"
+        }, 
+        {
+            "location": "/user/#production-management-system-wiki", 
+            "text": "", 
+            "title": "Production Management System Wiki"
+        }, 
+        {
+            "location": "/user/#pre-requisites", 
+            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.", 
+            "title": "Pre-requisites"
+        }, 
+        {
+            "location": "/user/#installation", 
+            "text": "git clone https://github.com/sithu/prod-mgmt  - Checkout the source code.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/user/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/machine/", 
+            "text": "", 
+            "title": "Machine Setup"
+        }, 
+        {
+            "location": "/product/", 
+            "text": "", 
+            "title": "Product Setup"
+        }, 
+        {
+            "location": "/shift/", 
+            "text": "", 
+            "title": "Shift Setup"
+        }, 
+        {
+            "location": "/team/", 
+            "text": "", 
+            "title": "Team (Schedule) Setup"
+        }, 
+        {
+            "location": "/order/", 
+            "text": "", 
+            "title": "Order and Production Entry"
+        }, 
+        {
+            "location": "/history/", 
+            "text": "", 
+            "title": "History for Reporting"
+        }, 
+        {
+            "location": "/dashboard/", 
+            "text": "", 
+            "title": "Dashboard"
+        }, 
+        {
+            "location": "/db/", 
+            "text": "", 
+            "title": "Database Backup"
         }
     ]
 }
