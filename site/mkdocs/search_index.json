@@ -47,28 +47,18 @@
         }, 
         {
             "location": "/user/", 
-            "text": "Production Management System Wiki\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Users and Roles\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
             "title": "User Setup"
         }, 
         {
-            "location": "/user/#production-management-system-wiki", 
+            "location": "/user/#users-and-roles", 
             "text": "", 
-            "title": "Production Management System Wiki"
+            "title": "Users and Roles"
         }, 
         {
-            "location": "/user/#pre-requisites", 
-            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.", 
-            "title": "Pre-requisites"
-        }, 
-        {
-            "location": "/user/#installation", 
-            "text": "git clone https://github.com/sithu/prod-mgmt  - Checkout the source code.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/user/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/user/#user-list", 
+            "text": "View all users.   Go to Employees   User", 
+            "title": "User List"
         }, 
         {
             "location": "/machine/", 
