@@ -2,48 +2,48 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Production Management System - User Manual\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\npython -version\n - Check to see the server has installed Python 2.7.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.", 
+            "text": "User Manual\n\n\nPre-requisites\n\n\nSoftware requirements\n\n\n\n\nAlthough the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static IP or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port \n5000\n for incoming traffic to the server.\n\n\npython --version\n - Check to see the server has installed Python 2.7.x.\n\n\nbower --version\n - Check bower package manager tool. \n\n\n\n\nHardware requirements\n\n\n\n\nDual Core Intel or AMD CPU with 64-bit Architecture.\n\n\n4 GB Memory.\n\n\n20 GB SSD or SATA Hard Drive.\n\n\nEthernet Port Network or Wifi\n\n\n\n\nInstallation\n\n\nExecute the following commands in a Linux shell Terminal.\n\n\n\n\nping www.google.com\n - Ping to check the Internet connection. Press Ctl+D to exit.\n\n\nmkdir app\n - Create a \napp\n folder under the current user home path. E.g. /Home/User/cedar\n\n\ncd app\n - Go inside the app folder you just created.\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Download the source code.\n\n\ncd prod-mgmt/\n - Go inside the prod-mgmt folder.\n\n\nvirtualenv flask\n - Create a Python virtual enviroment.\n\n\n\n\n. .env\n - Load the virtual environment. Then, you should able to see \n(flask)\n at the beginning of the command prompt.\n\n\nExample: \n\n\nsh\n(flask)~/app/prod-mgmt$\n\n\n\n\n\n\npip install -r requirements.txt\n - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:\n\n\n```sh\nSuccessfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1\n````\n\n\n\n\n\n\nbower install\n - Install all front-end JavaScript and CSS libraries.", 
             "title": "Home"
         }, 
         {
-            "location": "/#production-management-system-user-manual", 
+            "location": "/#user-manual", 
             "text": "", 
-            "title": "Production Management System - User Manual"
+            "title": "User Manual"
         }, 
         {
             "location": "/#pre-requisites", 
-            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.  python -version  - Check to see the server has installed Python 2.7.", 
+            "text": "", 
             "title": "Pre-requisites"
         }, 
         {
+            "location": "/#software-requirements", 
+            "text": "Although the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.  A reliable Internet connection on the server that you are installing.  Either a static IP or dynamic IP assigned to the server.  The network or router must allow TCP port  5000  for incoming traffic to the server.  python --version  - Check to see the server has installed Python 2.7.x.  bower --version  - Check bower package manager tool.", 
+            "title": "Software requirements"
+        }, 
+        {
+            "location": "/#hardware-requirements", 
+            "text": "Dual Core Intel or AMD CPU with 64-bit Architecture.  4 GB Memory.  20 GB SSD or SATA Hard Drive.  Ethernet Port Network or Wifi", 
+            "title": "Hardware requirements"
+        }, 
+        {
             "location": "/#installation", 
-            "text": "git clone https://github.com/sithu/prod-mgmt  - Checkout the source code.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "text": "Execute the following commands in a Linux shell Terminal.   ping www.google.com  - Ping to check the Internet connection. Press Ctl+D to exit.  mkdir app  - Create a  app  folder under the current user home path. E.g. /Home/User/cedar  cd app  - Go inside the app folder you just created.  git clone https://github.com/sithu/prod-mgmt  - Download the source code.  cd prod-mgmt/  - Go inside the prod-mgmt folder.  virtualenv flask  - Create a Python virtual enviroment.   . .env  - Load the virtual environment. Then, you should able to see  (flask)  at the beginning of the command prompt.  Example:   sh\n(flask)~/app/prod-mgmt$    pip install -r requirements.txt  - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:  ```sh\nSuccessfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1\n````    bower install  - Install all front-end JavaScript and CSS libraries.", 
             "title": "Installation"
         }, 
         {
             "location": "/getting-started/", 
-            "text": "Production Management System Wiki\n\n\nPre-requisites\n\n\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port 5000 for incoming traffic to the server.\n\n\n\n\nInstallation\n\n\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Checkout the source code.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Getting Started\n\n\nRun the application\n\n\nExecute this server startup command in the same terminal that you installed the application.\n\n\ngunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\nExample: \n\n\n(flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
             "title": "Getting Started"
         }, 
         {
-            "location": "/getting-started/#production-management-system-wiki", 
+            "location": "/getting-started/#getting-started", 
             "text": "", 
-            "title": "Production Management System Wiki"
+            "title": "Getting Started"
         }, 
         {
-            "location": "/getting-started/#pre-requisites", 
-            "text": "A reliable Internet connection on the server that you are installing.  Either a static or dynamic IP assigned to the server.  The network or router must allow TCP port 5000 for incoming traffic to the server.", 
-            "title": "Pre-requisites"
-        }, 
-        {
-            "location": "/getting-started/#installation", 
-            "text": "git clone https://github.com/sithu/prod-mgmt  - Checkout the source code.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/getting-started/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/getting-started/#run-the-application", 
+            "text": "Execute this server startup command in the same terminal that you installed the application.  gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Example:   (flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
+            "title": "Run the application"
         }, 
         {
             "location": "/user/", 
