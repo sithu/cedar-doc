@@ -61,61 +61,6 @@
             "title": "Congratulations! You have successfully installed the application."
         }, 
         {
-            "location": "/user/", 
-            "text": "Users and Roles\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
-            "title": "User Setup"
-        }, 
-        {
-            "location": "/user/#users-and-roles", 
-            "text": "", 
-            "title": "Users and Roles"
-        }, 
-        {
-            "location": "/user/#user-list", 
-            "text": "View all users.   Go to Employees   User", 
-            "title": "User List"
-        }, 
-        {
-            "location": "/machine/", 
-            "text": "Machine", 
-            "title": "Machine Setup"
-        }, 
-        {
-            "location": "/machine/#machine", 
-            "text": "", 
-            "title": "Machine"
-        }, 
-        {
-            "location": "/product/", 
-            "text": "Product", 
-            "title": "Product Setup"
-        }, 
-        {
-            "location": "/product/#product", 
-            "text": "", 
-            "title": "Product"
-        }, 
-        {
-            "location": "/shift/", 
-            "text": "Shift", 
-            "title": "Shift Setup"
-        }, 
-        {
-            "location": "/shift/#shift", 
-            "text": "", 
-            "title": "Shift"
-        }, 
-        {
-            "location": "/team/", 
-            "text": "Team", 
-            "title": "Team (Schedule) Setup"
-        }, 
-        {
-            "location": "/team/#team", 
-            "text": "", 
-            "title": "Team"
-        }, 
-        {
             "location": "/order/", 
             "text": "Orders and Production Entries\n\n\n1. Check Orders\n\n\nOnce you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.\n\n\nBefore you create a new Production Entry, first view the order list and check for \n\n\n\n\nOrder Id\n\n\nOrder with the 'NEW' Status\n\n\nOrder with no production entries\n\n\n\n\nYou may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the \nIN_PROGRESS\n orders is:\n\n\n\n\nThe order is still \nIN_PROGRESS\n when a Shift is ended.\n\n\n\n\n\n\nIn the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. \n\n\nIn the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.\n\n\n\n\nThe production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.\n\n\n\n\n2. Create Production Entries\n\n\nNow, click on \nProduction Entry\n tab from the menu bar and see the existing production entries.\n\n\nIdeally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:\n\n\n\n\nThe \nIN_PROGRESS\n orders with carryover from the previous shift.\n\n\nThe \nNEW\n orders based on the order id in ascending order: 1, 2, 3, etc..\n\n\n\n\nClick \nCreate\n tab to creat a new production entry. In the new production entry form:\n\n\n\n\nSelect current shift\n\n\nSelect the order\n\n\nSelect team lead name who is currently assigned to the machine.\n\n\nSelect all team members who are currently assigned to the machine.\n\n\nFinally, click \nSave\n.\n\n\n\n\n\n\nRepeat the same steps for all the orders that you want to process for the current shift.\n\n\nCreate Order Video\n\n\n3. Update Production Entries\n\n\nBefore you update a production entry, check \nRemaning\n count first. Click edit button :black_nib: on the production entry that you are going to update.\n\n\nUpdate hourly number of good and number of bad in comma-separated format: \n100,125,110\n\n\n\n\nUpdate Production Entries Video", 
             "title": "Order and Production Entry"
@@ -141,16 +86,6 @@
             "title": "3. Update Production Entries"
         }, 
         {
-            "location": "/history/", 
-            "text": "Histroy", 
-            "title": "History for Reporting"
-        }, 
-        {
-            "location": "/history/#histroy", 
-            "text": "", 
-            "title": "Histroy"
-        }, 
-        {
             "location": "/dashboard/", 
             "text": "Dashboard\n\n\nThe dashboard shows all \nIN_PROGRESS\n orders status in real time with the 30 seconds interval. Each donut chart represents an order running on a machine with production entry details:\n\n\n\n\nOrder Quantity\n\n\nNumber of Good\n\n\nNumber of Bad", 
             "title": "Dashboard"
@@ -159,16 +94,6 @@
             "location": "/dashboard/#dashboard", 
             "text": "The dashboard shows all  IN_PROGRESS  orders status in real time with the 30 seconds interval. Each donut chart represents an order running on a machine with production entry details:   Order Quantity  Number of Good  Number of Bad", 
             "title": "Dashboard"
-        }, 
-        {
-            "location": "/db/", 
-            "text": "Database Backup", 
-            "title": "Database Backup"
-        }, 
-        {
-            "location": "/db/#database-backup", 
-            "text": "", 
-            "title": "Database Backup"
         }
     ]
 }
