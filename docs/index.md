@@ -8,8 +8,19 @@
 * A reliable Internet connection on the server that you are installing.
 * Either a static IP or dynamic IP assigned to the server.
 * The network or router must allow TCP port `5000` for incoming traffic to the server.
-* `python --version` - Check to see the server has installed Python 2.7.x.
-* `bower --version` - Check bower package manager tool. 
+*  Check the server has installed Python 2.7.x.
+
+```sh
+python --version
+```
+
+*  Check the bower package manager tool is installed.
+
+```sh
+bower --version
+```
+
+![](img/software-pre.png)
 
 ### Hardware requirements
 
@@ -22,29 +33,109 @@
 
 Execute the following commands in a Linux shell Terminal.
 
-* `ping www.google.com` - Ping to check the Internet connection. Press Ctl+D to exit.
-* `mkdir app` - Create a `app` folder under the current user home path. E.g. /Home/User/cedar
+* Ping to check the Internet connection. Press Ctl+D to exit.
+
+```sh
+cedar@ubuntu:~/app$ ping www.google.com
+PING www.google.com (172.217.6.68) 56(84) bytes of data.
+64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=1 ttl=128 time=12.0 ms
+64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=2 ttl=128 time=14.2 ms
+64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=3 ttl=128 time=13.3 ms
+64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=4 ttl=128 time=13.9 ms
+^C
+--- www.google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 12.046/13.386/14.210/0.844 ms
+```
+
+* Create a `app` folder under the current user home path. E.g. /home/cedar. Delete the `app` folder to ensure there is no existing one.
+
+```sh
+cedar@ubuntu:~$ rm -rf app
+cedar@ubuntu:~$ mkdir app
+```
+
+* Create a `backup` folder to store database backup files.
+
+```sh
+cedar@ubuntu:~$ mkdir backup
+```
+
 * `cd app` - Go inside the app folder you just created.
-* `git clone https://github.com/sithu/prod-mgmt` - Download the source code.
-* `cd prod-mgmt/` - Go inside the prod-mgmt folder.
-* `virtualenv flask` - Create a Python virtual enviroment.
-* `. .env` - Load the virtual environment. Then, you should able to see `(flask)` at the beginning of the command prompt.
 
-    Example: 
+```sh
+cedar@ubuntu:~$ cd app
+```
 
-    ```sh
-    (flask)~/app/prod-mgmt$
-    ```
+* Check the current path is under `/home/cedar/app`
 
-* `pip install -r requirements.txt` - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:
+```sh
+cedar@ubuntu:~/app$ pwd
+/home/cedar/app
+```
 
-    ```sh
-    Successfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1
-    ````
+* Download the source code:
 
-* `bower install` - Install all front-end JavaScript and CSS libraries.
+```sh
+cedar@ubuntu:~/app$ git clone https://github.com/sithu/prod-mgmt
+```
+
+* Go inside the prod-mgmt folder.
+
+```sh
+cedar@ubuntu:~/app$ cd prod-mgmt
+```
+
+* Create a Python virtual enviroment.
+
+```sh
+cedar@ubuntu:~/app/prod-mgmt$ virtualenv flask
+```
+
+```sh
+The program 'virtualenv' is currently not installed. You can install it by typing:
+sudo apt install virtualenv
+```
+
+If you get this error, then you need to install `virtualenv` via:
+
+If it asks for password, enter Cedar's account password.
+
+```sh
+cedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv
+```
 
 
+* Load the virtual environment. Then, you should able to see `(flask)` at the beginning of the command prompt.
+
+```sh
+cedar@ubuntu:~/app/prod-mgmt$ . .env
+(flask) cedar@ubuntu:~/app/prod-mgmt$
+```
+
+* Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:
+
+```sh
+(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt
+```
+
+![](img/pip-install.png)
+
+
+If you get this error: `failed with error code 1 in /tmp/pip-build-g7tapu/Pillow/`, then you run this apt-get install command and re-run the `pip install` command.
+
+```sh
+(flask) cedar@ubuntu:~/app/prod-mgmt$ sudo apt-get install python-dev
+(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt
+```
+
+* Finally, install all front-end JavaScript and CSS libraries.
+
+```sh
+(flask) cedar@ubuntu:~/app/prod-mgmt$ bower install
+```
+
+![](img/bower-install.png)
 
 
 

@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/", 
-            "text": "User Manual\n\n\nPre-requisites\n\n\nSoftware requirements\n\n\n\n\nAlthough the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static IP or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port \n5000\n for incoming traffic to the server.\n\n\npython --version\n - Check to see the server has installed Python 2.7.x.\n\n\nbower --version\n - Check bower package manager tool. \n\n\n\n\nHardware requirements\n\n\n\n\nDual Core Intel or AMD CPU with 64-bit Architecture.\n\n\n4 GB Memory.\n\n\n20 GB SSD or SATA Hard Drive.\n\n\nEthernet Port Network or Wifi\n\n\n\n\nInstallation\n\n\nExecute the following commands in a Linux shell Terminal.\n\n\n\n\nping www.google.com\n - Ping to check the Internet connection. Press Ctl+D to exit.\n\n\nmkdir app\n - Create a \napp\n folder under the current user home path. E.g. /Home/User/cedar\n\n\ncd app\n - Go inside the app folder you just created.\n\n\ngit clone https://github.com/sithu/prod-mgmt\n - Download the source code.\n\n\ncd prod-mgmt/\n - Go inside the prod-mgmt folder.\n\n\nvirtualenv flask\n - Create a Python virtual enviroment.\n\n\n\n\n. .env\n - Load the virtual environment. Then, you should able to see \n(flask)\n at the beginning of the command prompt.\n\n\nExample: \n\n\nsh\n(flask)~/app/prod-mgmt$\n\n\n\n\n\n\npip install -r requirements.txt\n - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:\n\n\n```sh\nSuccessfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1\n````\n\n\n\n\n\n\nbower install\n - Install all front-end JavaScript and CSS libraries.", 
-            "title": "Home"
+            "text": "User Manual\n\n\nPre-requisites\n\n\nSoftware requirements\n\n\n\n\nAlthough the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static IP or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port \n5000\n for incoming traffic to the server.\n\n\nCheck the server has installed Python 2.7.x.\n\n\n\n\npython --version\n\n\n\n\n\n\nCheck the bower package manager tool is installed.\n\n\n\n\nbower --version\n\n\n\n\n\n\nHardware requirements\n\n\n\n\nDual Core Intel or AMD CPU with 64-bit Architecture.\n\n\n4 GB Memory.\n\n\n20 GB SSD or SATA Hard Drive.\n\n\nEthernet Port Network or Wifi\n\n\n\n\nInstallation\n\n\nExecute the following commands in a Linux shell Terminal.\n\n\n\n\nPing to check the Internet connection. Press Ctl+D to exit.\n\n\n\n\ncedar@ubuntu:~/app$ ping www.google.com\nPING www.google.com (172.217.6.68) 56(84) bytes of data.\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=1 ttl=128 time=12.0 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=2 ttl=128 time=14.2 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=3 ttl=128 time=13.3 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=4 ttl=128 time=13.9 ms\n^C\n--- www.google.com ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3006ms\nrtt min/avg/max/mdev = 12.046/13.386/14.210/0.844 ms\n\n\n\n\n\n\nCreate a \napp\n folder under the current user home path. E.g. /home/cedar. Delete the \napp\n folder to ensure there is no existing one.\n\n\n\n\ncedar@ubuntu:~$ rm -rf app\ncedar@ubuntu:~$ mkdir app\n\n\n\n\n\n\nCreate a \nbackup\n folder to store database backup files.\n\n\n\n\ncedar@ubuntu:~$ mkdir backup\n\n\n\n\n\n\ncd app\n - Go inside the app folder you just created.\n\n\n\n\ncedar@ubuntu:~$ cd app\n\n\n\n\n\n\nCheck the current path is under \n/home/cedar/app\n\n\n\n\ncedar@ubuntu:~/app$ pwd\n/home/cedar/app\n\n\n\n\n\n\nDownload the source code:\n\n\n\n\ncedar@ubuntu:~/app$ git clone https://github.com/sithu/prod-mgmt\n\n\n\n\n\n\nGo inside the prod-mgmt folder.\n\n\n\n\ncedar@ubuntu:~/app$ cd prod-mgmt\n\n\n\n\n\n\nCreate a Python virtual enviroment.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ virtualenv flask\n\n\n\n\nThe program 'virtualenv' is currently not installed. You can install it by typing:\nsudo apt install virtualenv\n\n\n\n\nIf you get this error, then you need to install \nvirtualenv\n via:\n\n\nIf it asks for password, enter Cedar's account password.\n\n\ncedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv\n\n\n\n\n\n\nLoad the virtual environment. Then, you should able to see \n(flask)\n at the beginning of the command prompt.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ . .env\n(flask) cedar@ubuntu:~/app/prod-mgmt$\n\n\n\n\n\n\nInstall all required Python PIP modules. At the end, you should see all the installed Python packages as below:\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nIf you get this error: \nfailed with error code 1 in /tmp/pip-build-g7tapu/Pillow/\n, then you run this apt-get install command and re-run the \npip install\n command.\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ sudo apt-get install python-dev\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nFinally, install all front-end JavaScript and CSS libraries.\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ bower install", 
+            "title": "Installation"
         }, 
         {
             "location": "/#user-manual", 
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#software-requirements", 
-            "text": "Although the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.  A reliable Internet connection on the server that you are installing.  Either a static IP or dynamic IP assigned to the server.  The network or router must allow TCP port  5000  for incoming traffic to the server.  python --version  - Check to see the server has installed Python 2.7.x.  bower --version  - Check bower package manager tool.", 
+            "text": "Although the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.  A reliable Internet connection on the server that you are installing.  Either a static IP or dynamic IP assigned to the server.  The network or router must allow TCP port  5000  for incoming traffic to the server.  Check the server has installed Python 2.7.x.   python --version   Check the bower package manager tool is installed.   bower --version", 
             "title": "Software requirements"
         }, 
         {
@@ -27,23 +27,38 @@
         }, 
         {
             "location": "/#installation", 
-            "text": "Execute the following commands in a Linux shell Terminal.   ping www.google.com  - Ping to check the Internet connection. Press Ctl+D to exit.  mkdir app  - Create a  app  folder under the current user home path. E.g. /Home/User/cedar  cd app  - Go inside the app folder you just created.  git clone https://github.com/sithu/prod-mgmt  - Download the source code.  cd prod-mgmt/  - Go inside the prod-mgmt folder.  virtualenv flask  - Create a Python virtual enviroment.   . .env  - Load the virtual environment. Then, you should able to see  (flask)  at the beginning of the command prompt.  Example:   sh\n(flask)~/app/prod-mgmt$    pip install -r requirements.txt  - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:  ```sh\nSuccessfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1\n````    bower install  - Install all front-end JavaScript and CSS libraries.", 
+            "text": "Execute the following commands in a Linux shell Terminal.   Ping to check the Internet connection. Press Ctl+D to exit.   cedar@ubuntu:~/app$ ping www.google.com\nPING www.google.com (172.217.6.68) 56(84) bytes of data.\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=1 ttl=128 time=12.0 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=2 ttl=128 time=14.2 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=3 ttl=128 time=13.3 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=4 ttl=128 time=13.9 ms\n^C\n--- www.google.com ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3006ms\nrtt min/avg/max/mdev = 12.046/13.386/14.210/0.844 ms   Create a  app  folder under the current user home path. E.g. /home/cedar. Delete the  app  folder to ensure there is no existing one.   cedar@ubuntu:~$ rm -rf app\ncedar@ubuntu:~$ mkdir app   Create a  backup  folder to store database backup files.   cedar@ubuntu:~$ mkdir backup   cd app  - Go inside the app folder you just created.   cedar@ubuntu:~$ cd app   Check the current path is under  /home/cedar/app   cedar@ubuntu:~/app$ pwd\n/home/cedar/app   Download the source code:   cedar@ubuntu:~/app$ git clone https://github.com/sithu/prod-mgmt   Go inside the prod-mgmt folder.   cedar@ubuntu:~/app$ cd prod-mgmt   Create a Python virtual enviroment.   cedar@ubuntu:~/app/prod-mgmt$ virtualenv flask  The program 'virtualenv' is currently not installed. You can install it by typing:\nsudo apt install virtualenv  If you get this error, then you need to install  virtualenv  via:  If it asks for password, enter Cedar's account password.  cedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv   Load the virtual environment. Then, you should able to see  (flask)  at the beginning of the command prompt.   cedar@ubuntu:~/app/prod-mgmt$ . .env\n(flask) cedar@ubuntu:~/app/prod-mgmt$   Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:   (flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt   If you get this error:  failed with error code 1 in /tmp/pip-build-g7tapu/Pillow/ , then you run this apt-get install command and re-run the  pip install  command.  (flask) cedar@ubuntu:~/app/prod-mgmt$ sudo apt-get install python-dev\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt   Finally, install all front-end JavaScript and CSS libraries.   (flask) cedar@ubuntu:~/app/prod-mgmt$ bower install", 
             "title": "Installation"
         }, 
         {
             "location": "/getting-started/", 
-            "text": "Getting Started\n\n\nRun the application\n\n\nExecute this server startup command in the same terminal that you installed the application.\n\n\ngunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\nExample: \n\n\n(flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
-            "title": "Getting Started"
-        }, 
-        {
-            "location": "/getting-started/#getting-started", 
-            "text": "", 
-            "title": "Getting Started"
+            "text": "Run the Application\n\n\nServer Startup\n\n\nExecute this server startup command in the same terminal that you installed the application.\n\n\ngunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\nExample: \n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\n\n\nNow, you can load the application in a web browser. Note: Open FireFox and enter this URL in the browser.\n\n\nhttp://{MACHINE_IP}:5000/\n\n\n\n\n\n\nHow to find server machine IP?\n\n\nOpen the another Terminal window and enter this command:\n\n\nifconfig -a\n\n\n\n\n\n\nLogging in to the Application\n\n\nOnce you can see the home page in the browser, go ahead and click the \nLog In\n button at the bottom of the page. Then, it will take you to the \nLog In\n page.\n\n\n\n\nCongratulations! You have successfully installed the application.", 
+            "title": "Run the Application"
         }, 
         {
             "location": "/getting-started/#run-the-application", 
-            "text": "Execute this server startup command in the same terminal that you installed the application.  gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Example:   (flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
-            "title": "Run the application"
+            "text": "", 
+            "title": "Run the Application"
+        }, 
+        {
+            "location": "/getting-started/#server-startup", 
+            "text": "Execute this server startup command in the same terminal that you installed the application.  gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Example:   (flask) cedar@ubuntu:~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Now, you can load the application in a web browser. Note: Open FireFox and enter this URL in the browser.  http://{MACHINE_IP}:5000/", 
+            "title": "Server Startup"
+        }, 
+        {
+            "location": "/getting-started/#how-to-find-server-machine-ip", 
+            "text": "Open the another Terminal window and enter this command:  ifconfig -a", 
+            "title": "How to find server machine IP?"
+        }, 
+        {
+            "location": "/getting-started/#logging-in-to-the-application", 
+            "text": "Once you can see the home page in the browser, go ahead and click the  Log In  button at the bottom of the page. Then, it will take you to the  Log In  page.", 
+            "title": "Logging in to the Application"
+        }, 
+        {
+            "location": "/getting-started/#congratulations-you-have-successfully-installed-the-application", 
+            "text": "", 
+            "title": "Congratulations! You have successfully installed the application."
         }, 
         {
             "location": "/user/", 
@@ -62,41 +77,96 @@
         }, 
         {
             "location": "/machine/", 
-            "text": "", 
+            "text": "Machine", 
             "title": "Machine Setup"
         }, 
         {
-            "location": "/product/", 
+            "location": "/machine/#machine", 
             "text": "", 
+            "title": "Machine"
+        }, 
+        {
+            "location": "/product/", 
+            "text": "Product", 
             "title": "Product Setup"
         }, 
         {
-            "location": "/shift/", 
+            "location": "/product/#product", 
             "text": "", 
+            "title": "Product"
+        }, 
+        {
+            "location": "/shift/", 
+            "text": "Shift", 
             "title": "Shift Setup"
         }, 
         {
-            "location": "/team/", 
+            "location": "/shift/#shift", 
             "text": "", 
+            "title": "Shift"
+        }, 
+        {
+            "location": "/team/", 
+            "text": "Team", 
             "title": "Team (Schedule) Setup"
         }, 
         {
-            "location": "/order/", 
+            "location": "/team/#team", 
             "text": "", 
+            "title": "Team"
+        }, 
+        {
+            "location": "/order/", 
+            "text": "Orders and Production Entries\n\n\n1. Check Orders\n\n\nOnce you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.\n\n\nBefore you create a new Production Entry, first view the order list and check for \n\n\n\n\nOrder Id\n\n\nOrder with the 'NEW' Status\n\n\nOrder with no production entries\n\n\n\n\nYou may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the \nIN_PROGRESS\n orders is:\n\n\n\n\nThe order is still \nIN_PROGRESS\n when a Shift is ended.\n\n\n\n\n\n\nIn the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. \n\n\nIn the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.\n\n\n\n\nThe production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.\n\n\n\n\n2. Create Production Entries\n\n\nNow, click on \nProduction Entry\n tab from the menu bar and see the existing production entries.\n\n\nIdeally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:\n\n\n\n\nThe \nIN_PROGRESS\n orders with carryover from the previous shift.\n\n\nThe \nNEW\n orders based on the order id in ascending order: 1, 2, 3, etc..\n\n\n\n\nClick \nCreate\n tab to creat a new production entry. In the new production entry form:\n\n\n\n\nSelect current shift\n\n\nSelect the order\n\n\nSelect team lead name who is currently assigned to the machine.\n\n\nSelect all team members who are currently assigned to the machine.\n\n\nFinally, click \nSave\n.\n\n\n\n\n\n\nRepeat the same steps for all the orders that you want to process for the current shift.\n\n\nCreate Order Video\n\n\n3. Update Production Entries\n\n\nBefore you update a production entry, check \nRemaning\n count first. Click edit button :black_nib: on the production entry that you are going to update.\n\n\nUpdate hourly number of good and number of bad in comma-separated format: \n100,125,110\n\n\n\n\nUpdate Production Entries Video", 
             "title": "Order and Production Entry"
         }, 
         {
-            "location": "/history/", 
+            "location": "/order/#orders-and-production-entries", 
             "text": "", 
+            "title": "Orders and Production Entries"
+        }, 
+        {
+            "location": "/order/#1-check-orders", 
+            "text": "Once you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.  Before you create a new Production Entry, first view the order list and check for    Order Id  Order with the 'NEW' Status  Order with no production entries   You may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the  IN_PROGRESS  orders is:   The order is still  IN_PROGRESS  when a Shift is ended.    In the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet.   In the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.   The production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.", 
+            "title": "1. Check Orders"
+        }, 
+        {
+            "location": "/order/#2-create-production-entries", 
+            "text": "Now, click on  Production Entry  tab from the menu bar and see the existing production entries.  Ideally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:   The  IN_PROGRESS  orders with carryover from the previous shift.  The  NEW  orders based on the order id in ascending order: 1, 2, 3, etc..   Click  Create  tab to creat a new production entry. In the new production entry form:   Select current shift  Select the order  Select team lead name who is currently assigned to the machine.  Select all team members who are currently assigned to the machine.  Finally, click  Save .    Repeat the same steps for all the orders that you want to process for the current shift.  Create Order Video", 
+            "title": "2. Create Production Entries"
+        }, 
+        {
+            "location": "/order/#3-update-production-entries", 
+            "text": "Before you update a production entry, check  Remaning  count first. Click edit button :black_nib: on the production entry that you are going to update.  Update hourly number of good and number of bad in comma-separated format:  100,125,110   Update Production Entries Video", 
+            "title": "3. Update Production Entries"
+        }, 
+        {
+            "location": "/history/", 
+            "text": "Histroy", 
             "title": "History for Reporting"
         }, 
         {
-            "location": "/dashboard/", 
+            "location": "/history/#histroy", 
             "text": "", 
+            "title": "Histroy"
+        }, 
+        {
+            "location": "/dashboard/", 
+            "text": "Dashboard\n\n\nThe dashboard shows all \nIN_PROGRESS\n orders status in real time with the 30 seconds interval. Each donut chart represents an order running on a machine with production entry details:\n\n\n\n\nOrder Quantity\n\n\nNumber of Good\n\n\nNumber of Bad", 
+            "title": "Dashboard"
+        }, 
+        {
+            "location": "/dashboard/#dashboard", 
+            "text": "The dashboard shows all  IN_PROGRESS  orders status in real time with the 30 seconds interval. Each donut chart represents an order running on a machine with production entry details:   Order Quantity  Number of Good  Number of Bad", 
             "title": "Dashboard"
         }, 
         {
             "location": "/db/", 
+            "text": "Database Backup", 
+            "title": "Database Backup"
+        }, 
+        {
+            "location": "/db/#database-backup", 
             "text": "", 
             "title": "Database Backup"
         }

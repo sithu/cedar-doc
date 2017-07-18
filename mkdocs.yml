@@ -5,8 +5,8 @@ theme: readthedocs
 docs_dir: 'docs'
 
 pages:
-- ['index.md', 'Home']
-- ['getting-started.md', 'Getting Started']
+- ['index.md', 'Installation']
+- ['getting-started.md', 'Run the Application']
 - ['user.md', 'User Setup']
 - ['machine.md', 'Machine Setup']
 - ['product.md', 'Product Setup']
