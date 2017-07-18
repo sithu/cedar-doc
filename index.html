@@ -233,14 +233,23 @@ cedar@ubuntu:~$ mkdir app
 <ul>
 <li>Create a Python virtual enviroment.</li>
 </ul>
-<pre><code class="sh">cedar@ubuntu:~/prod-mgmt$ virtualenv flask
+<pre><code class="sh">cedar@ubuntu:~/app/prod-mgmt$ virtualenv flask
+</code></pre>
+
+<pre><code class="sh">The program 'virtualenv' is currently not installed. You can install it by typing:
+sudo apt install virtualenv
+</code></pre>
+
+<p>If you get this error, then you need to install <code>virtualenv</code> via:</p>
+<p>If it asks for password, enter Cedar's account password.</p>
+<pre><code class="sh">cedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv
 </code></pre>
 
 <ul>
 <li>Load the virtual environment. Then, you should able to see <code>(flask)</code> at the beginning of the command prompt.</li>
 </ul>
-<pre><code class="sh">cedar@ubuntu:~/prod-mgmt$ . .env
-(flask)cedar@ubuntu:~/prod-mgmt$
+<pre><code class="sh">cedar@ubuntu:~/app/prod-mgmt$ . .env
+(flask) cedar@ubuntu:~/app/prod-mgmt$
 </code></pre>
 
 <ul>
@@ -303,5 +312,5 @@ cedar@ubuntu:~$ mkdir app
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-07-18 07:17:38
+Build Date UTC : 2017-07-18 07:28:20
 -->
