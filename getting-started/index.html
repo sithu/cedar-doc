@@ -59,6 +59,16 @@
             
     <li class="toctree-l2"><a href="#run-the-application">Run the Application</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l3" href="#server-startup">Server Startup</a></li>
+        
+            <li><a class="toctree-l3" href="#how-to-find-server-machine-ip">How to find server machine IP?</a></li>
+        
+            <li><a class="toctree-l3" href="#logging-in-to-the-application">Logging in to the Application</a></li>
+        
+        </ul>
+    
 
     </ul>
 	    </li>
@@ -141,11 +151,28 @@
             <div class="section">
               
                 <h1 id="run-the-application">Run the Application</h1>
+<h2 id="server-startup">Server Startup</h2>
 <p>Execute this server startup command in the same terminal that you installed the application.</p>
 <p><code>gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app</code></p>
 <p>Example: </p>
-<pre><code class="sh">(flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app
+<pre><code class="sh">(flask) cedar@ubuntu:~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app
 </code></pre>
+
+<p>Now, you can load the application in a web browser. Note: Open FireFox and enter this URL in the browser.</p>
+<pre><code class="sh">http://{MACHINE_IP}:5000/
+</code></pre>
+
+<p><img alt="" src="../img/run-app.png" /></p>
+<h2 id="how-to-find-server-machine-ip">How to find server machine IP?</h2>
+<p>Open the another Terminal window and enter this command:</p>
+<pre><code class="sh">ifconfig -a
+</code></pre>
+
+<p><img alt="" src="../img/how-to-find-ip.png" /></p>
+<h2 id="logging-in-to-the-application">Logging in to the Application</h2>
+<p>Once you can see the home page in the browser, go ahead and click the <code>Log In</code> button at the bottom of the page. Then, it will take you to the <code>Log In</code> page.</p>
+<p><img alt="" src="../img/log-in.png" /></p>
+<h3 id="congratulations-you-have-successfully-installed-the-application">Congratulations! You have successfully installed the application.</h3>
               
             </div>
           </div>

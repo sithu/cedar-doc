@@ -32,13 +32,33 @@
         }, 
         {
             "location": "/getting-started/", 
-            "text": "Run the Application\n\n\nExecute this server startup command in the same terminal that you installed the application.\n\n\ngunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\nExample: \n\n\n(flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
+            "text": "Run the Application\n\n\nServer Startup\n\n\nExecute this server startup command in the same terminal that you installed the application.\n\n\ngunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\nExample: \n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app\n\n\n\n\nNow, you can load the application in a web browser. Note: Open FireFox and enter this URL in the browser.\n\n\nhttp://{MACHINE_IP}:5000/\n\n\n\n\n\n\nHow to find server machine IP?\n\n\nOpen the another Terminal window and enter this command:\n\n\nifconfig -a\n\n\n\n\n\n\nLogging in to the Application\n\n\nOnce you can see the home page in the browser, go ahead and click the \nLog In\n button at the bottom of the page. Then, it will take you to the \nLog In\n page.\n\n\n\n\nCongratulations! You have successfully installed the application.", 
             "title": "Run the Application"
         }, 
         {
             "location": "/getting-started/#run-the-application", 
-            "text": "Execute this server startup command in the same terminal that you installed the application.  gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Example:   (flask)~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 1 --log-level info --capture-output run:app", 
+            "text": "", 
             "title": "Run the Application"
+        }, 
+        {
+            "location": "/getting-started/#server-startup", 
+            "text": "Execute this server startup command in the same terminal that you installed the application.  gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Example:   (flask) cedar@ubuntu:~/app/prod-mgmt$ gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app  Now, you can load the application in a web browser. Note: Open FireFox and enter this URL in the browser.  http://{MACHINE_IP}:5000/", 
+            "title": "Server Startup"
+        }, 
+        {
+            "location": "/getting-started/#how-to-find-server-machine-ip", 
+            "text": "Open the another Terminal window and enter this command:  ifconfig -a", 
+            "title": "How to find server machine IP?"
+        }, 
+        {
+            "location": "/getting-started/#logging-in-to-the-application", 
+            "text": "Once you can see the home page in the browser, go ahead and click the  Log In  button at the bottom of the page. Then, it will take you to the  Log In  page.", 
+            "title": "Logging in to the Application"
+        }, 
+        {
+            "location": "/getting-started/#congratulations-you-have-successfully-installed-the-application", 
+            "text": "", 
+            "title": "Congratulations! You have successfully installed the application."
         }, 
         {
             "location": "/user/", 
