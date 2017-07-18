@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Production Management</title>
+  <title>Installation - Production Management</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home";
+    var mkdocs_page_name = "Installation";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = "/";
   </script>
@@ -49,7 +49,7 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href=".">Home</a>
+    <a class="current" href=".">Installation</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#user-manual">User Manual</a></li>
@@ -68,7 +68,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="getting-started/">Getting Started</a>
+    <a class="" href="getting-started/">Run the Application</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -138,7 +138,7 @@
     
       
     
-    <li>Home</li>
+    <li>Installation</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -225,25 +225,38 @@ cedar@ubuntu:~$ mkdir app
 </code></pre>
 
 <ul>
-<li><code>cd prod-mgmt/</code> - Go inside the prod-mgmt folder.</li>
-<li><code>virtualenv flask</code> - Create a Python virtual enviroment.</li>
-<li>
-<p><code>. .env</code> - Load the virtual environment. Then, you should able to see <code>(flask)</code> at the beginning of the command prompt.</p>
-<p>Example: </p>
-</li>
+<li>Go inside the prod-mgmt folder.</li>
 </ul>
-<pre><code class="sh">(flask)~/app/prod-mgmt$
+<pre><code class="sh">cedar@ubuntu:~/app$ cd prod-mgmt
 </code></pre>
 
 <ul>
-<li><code>pip install -r requirements.txt</code> - Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:</li>
+<li>Create a Python virtual enviroment.</li>
 </ul>
-<p>```sh
-Successfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1
-````</p>
+<pre><code class="sh">cedar@ubuntu:~/prod-mgmt$ virtualenv flask
+</code></pre>
+
 <ul>
-<li><code>bower install</code> - Install all front-end JavaScript and CSS libraries.</li>
+<li>Load the virtual environment. Then, you should able to see <code>(flask)</code> at the beginning of the command prompt.</li>
 </ul>
+<pre><code class="sh">cedar@ubuntu:~/prod-mgmt$ . .env
+(flask)cedar@ubuntu:~/prod-mgmt$
+</code></pre>
+
+<ul>
+<li>Install all required Python PIP modules. At the end, you should see all the installed Python packages as below:</li>
+</ul>
+<pre><code class="sh">(flask)cedar@ubuntu:~/prod-mgmt$ pip install -r requirements.txt
+</code></pre>
+
+<pre><code class="sh">Successfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Admin-1.5.0 Flask-BabelEx-0.9.3 Flask-Login-0.4.0 Flask-Mail-0.9.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.2 Flask-Security-3.0.0 Flask-WTF-0.14.2 Jinja2-2.9.6 MarkupSafe-1.0 Pillow-2.5.1 SQLAlchemy-1.1.11 WTForms-Components-0.10.3 Werkzeug-0.12.2 apscheduler-3.2.0 blinker-1.4 click-6.7 colour-0.1.4 decorator-4.1.1 enum-0.4.6 funcsigs-1.0.2 futures-3.1.1 gunicorn-19.7.1 infinity-1.4 intervals-0.8.0 itsdangerous-0.24 passlib-1.7.1 python-dateutil-2.4.2 pytz-2017.2 six-1.10.0 speaklater-1.3 sqlalchemy-utils-0.32.14 tzlocal-1.4 validators-0.12.0 wtforms-2.1
+````
+
+* Install all front-end JavaScript and CSS libraries.
+
+```sh
+(flask)cedar@ubuntu:~/prod-mgmt$ bower install
+</code></pre>
               
             </div>
           </div>
@@ -251,7 +264,7 @@ Successfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Ad
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting-started/" class="btn btn-neutral float-right" title="Getting Started">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="getting-started/" class="btn btn-neutral float-right" title="Run the Application">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -290,5 +303,5 @@ Successfully installed Babel-2.4.0 Flask-0.12.2 Flask-APScheduler-1.4.0 Flask-Ad
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-07-18 06:06:31
+Build Date UTC : 2017-07-18 07:17:38
 -->

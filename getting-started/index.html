@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Getting Started - Production Management</title>
+  <title>Run the Application - Production Management</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_name = "Run the Application";
     var mkdocs_page_input_path = "getting-started.md";
     var mkdocs_page_url = "/getting-started/";
   </script>
@@ -49,21 +49,15 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="..">Home</a>
+    <a class="" href="..">Installation</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Getting Started</a>
+    <a class="current" href="./">Run the Application</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#getting-started">Getting Started</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#run-the-application">Run the application</a></li>
-        
-        </ul>
+    <li class="toctree-l2"><a href="#run-the-application">Run the Application</a></li>
     
 
     </ul>
@@ -136,7 +130,7 @@
     
       
     
-    <li>Getting Started</li>
+    <li>Run the Application</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -146,8 +140,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="getting-started">Getting Started</h1>
-<h2 id="run-the-application">Run the application</h2>
+                <h1 id="run-the-application">Run the Application</h1>
 <p>Execute this server startup command in the same terminal that you installed the application.</p>
 <p><code>gunicorn --access-logfile - --log-file /tmp/prod-mgmt.log --bind 0.0.0.0:5000 --workers 4 --log-level info --capture-output run:app</code></p>
 <p>Example: </p>
@@ -163,7 +156,7 @@
         <a href="../user/" class="btn btn-neutral float-right" title="User Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
