@@ -87,6 +87,17 @@
     <a class="current" href="./">Order and Production Entry</a>
     <ul class="subnav">
             
+    <li class="toctree-l2"><a href="#orders-and-production-entries">Orders and Production Entries</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#1-check-orders">1. Check Orders</a></li>
+        
+            <li><a class="toctree-l3" href="#2-create-production-entries">2. Create Production Entries</a></li>
+        
+        </ul>
+    
+
     </ul>
 	    </li>
           
@@ -137,7 +148,42 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="orders-and-production-entries">Orders and Production Entries</h1>
+<h2 id="1-check-orders">1. Check Orders</h2>
+<p>Once you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.</p>
+<p>Before you create a new Production Entry, first view the order list and check for </p>
+<ul>
+<li>Order Id</li>
+<li>Order with the 'NEW' Status</li>
+<li>Order with no production entries</li>
+</ul>
+<p>You may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the <code>IN_PROGRESS</code> orders is:</p>
+<ul>
+<li>The order is still <code>IN_PROGRESS</code> when a Shift is ended.</li>
+</ul>
+<p><img alt="" src="../img/check-order-list.jpg" /></p>
+<p>In the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. </p>
+<p>In the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.</p>
+<blockquote>
+<p>The production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.</p>
+</blockquote>
+<h2 id="2-create-production-entries">2. Create Production Entries</h2>
+<p>Now, click on <code>Production Entry</code> tab from the menu bar and see the existing production entries.</p>
+<p>Ideally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:</p>
+<ul>
+<li>The <code>IN_PROGRESS</code> orders with carryover from the previous shift.</li>
+<li>The <code>NEW</code> orders based on the order id in ascending order: 1, 2, 3, etc..</li>
+</ul>
+<p>Click <code>Create</code> tab to creat a new production entry. In the new production entry form:</p>
+<ul>
+<li>Select current shift</li>
+<li>Select the order</li>
+<li>Select team lead name who is currently assigned to the machine.</li>
+<li>Select all team members who are currently assigned to the machine.</li>
+<li>Finally, click <code>Save</code>.</li>
+</ul>
+<p><img alt="" src="../img/new-p-entry.png" /></p>
+<p>Repeat the same steps for all the orders that you want to process for the current shift.</p>
               
             </div>
           </div>
