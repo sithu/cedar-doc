@@ -19,6 +19,46 @@
 
     
     <url>
+     <loc>/user/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/machine/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/product/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/shift/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/team/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/order/</loc>
      <lastmod>2017-07-18</lastmod>
      <changefreq>daily</changefreq>
@@ -27,7 +67,23 @@
 
     
     <url>
+     <loc>/history/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/dashboard/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/db/</loc>
      <lastmod>2017-07-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
