@@ -7,10 +7,10 @@ docs_dir: 'docs'
 pages:
 - ['index.md', 'Installation']
 - ['getting-started.md', 'Run the Application']
-- ['user.md', 'User Setup']
 - ['machine.md', 'Machine Setup']
 - ['product.md', 'Product Setup']
 - ['shift.md', 'Shift Setup']
+- ['user.md', 'User Setup']
 - ['team.md', 'Team (Schedule) Setup']
 - ['order.md', 'Order and Production Entry']
 - ['history.md', 'History for Reporting']
