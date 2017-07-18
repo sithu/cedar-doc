@@ -57,17 +57,24 @@
     <a class="" href="../getting-started/">Run the Application</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../user/">User Setup</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">Machine Setup</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#machine">Machine</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#add-new-machine">Add New Machine</a></li>
+        
+            <li><a class="toctree-l3" href="#update-machine">Update Machine</a></li>
+        
+            <li><a class="toctree-l3" href="#delete-machine">Delete Machine</a></li>
+        
+            <li><a class="toctree-l3" href="#list-machine">List Machine</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -81,6 +88,11 @@
             <li class="toctree-l1">
 		
     <a class="" href="../shift/">Shift Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user/">User Setup</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -141,6 +153,45 @@
             <div class="section">
               
                 <h1 id="machine">Machine</h1>
+<p>Machines are required for the order and production entry creation, and team scheduling.</p>
+<h2 id="add-new-machine">Add New Machine</h2>
+<p>In the <code>Machine</code> section, click on <code>Create</code> tab.</p>
+<ul>
+<li>Machine name should be posted on the actual machine so that the user can match during the data entry.</li>
+<li>Status has <ul>
+<li>ON </li>
+<li>OFF (shut down to save power)</li>
+<li>BORKEN (currently fixing on the issues)</li>
+<li>NOT_IN_USE (No longer used or deprecated)</li>
+</ul>
+</li>
+<li><code>Team Request</code> uses all the machine except the ones with the <code>NOT_IN_USE</code> status.</li>
+<li>Machine photo field is optional.</li>
+<li><code>Scheduled Assemblers</code> is the total number of assemblers to be used in the <code>Team Request</code> process a.k.a. scheduling.</li>
+<li><code>Lead to Machine Ratio</code> is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means <code>one lead - two machines</code>. </li>
+</ul>
+<p><img alt="" src="../img/new-machine.png" /></p>
+<h2 id="update-machine">Update Machine</h2>
+<p>Click on the pencial icon to edit a machine details.</p>
+<p><img alt="" src="../img/edit-machine.png" /></p>
+<h2 id="delete-machine">Delete Machine</h2>
+<p>Click on the bin icon to delete a machine.</p>
+<p><img alt="" src="../img/delete-machine-bin.png" /></p>
+<h2 id="list-machine">List Machine</h2>
+<p>List all the Machines. There are some important columns to notice:</p>
+<ul>
+<li><code>Scheduled Assemblers</code> Column</li>
+</ul>
+<p>This column shows the number of scheduled assemblers (workers). The <code>Team Request</code> [Employees &gt; Team Request] uses this number to form a team. <code>x2</code> means two assemblers will be assigned to that machine.</p>
+<ul>
+<li><code>Orders</code> Column</li>
+</ul>
+<p>This column shows the number of assemblers of the current <code>IN_PROGRESS</code> order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.</p>
+<ol>
+<li>If <code>Scheduled Assemblers</code> &gt; <code>Orders</code> xN counts, that means the machine is overstaff.</li>
+<li>If <code>Scheduled Assemblers</code> &lt; <code>Orders</code> xN counts, that means the machine is understaff.</li>
+</ol>
+<p><img alt="" src="../img/list-machines.png" /></p>
               
             </div>
           </div>
@@ -151,7 +202,7 @@
         <a href="../product/" class="btn btn-neutral float-right" title="Product Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../user/" class="btn btn-neutral" title="User Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../getting-started/" class="btn btn-neutral" title="Run the Application"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -177,7 +228,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../user/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../getting-started/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../product/" style="color: #fcfcfc">Next &raquo;</a></span>

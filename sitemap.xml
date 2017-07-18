@@ -19,14 +19,6 @@
 
     
     <url>
-     <loc>/user/</loc>
-     <lastmod>2017-07-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
      <loc>/machine/</loc>
      <lastmod>2017-07-18</lastmod>
      <changefreq>daily</changefreq>
@@ -44,6 +36,14 @@
     
     <url>
      <loc>/shift/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/user/</loc>
      <lastmod>2017-07-18</lastmod>
      <changefreq>daily</changefreq>
     </url>

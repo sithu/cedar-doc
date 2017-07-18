@@ -61,29 +61,34 @@
             "title": "Congratulations! You have successfully installed the application."
         }, 
         {
-            "location": "/user/", 
-            "text": "Users and Roles\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
-            "title": "User Setup"
-        }, 
-        {
-            "location": "/user/#users-and-roles", 
-            "text": "", 
-            "title": "Users and Roles"
-        }, 
-        {
-            "location": "/user/#user-list", 
-            "text": "View all users.   Go to Employees   User", 
-            "title": "User List"
-        }, 
-        {
             "location": "/machine/", 
-            "text": "Machine", 
+            "text": "Machine\n\n\nMachines are required for the order and production entry creation, and team scheduling.\n\n\nAdd New Machine\n\n\nIn the \nMachine\n section, click on \nCreate\n tab.\n\n\n\n\nMachine name should be posted on the actual machine so that the user can match during the data entry.\n\n\nStatus has \n\n\nON \n\n\nOFF (shut down to save power)\n\n\nBORKEN (currently fixing on the issues)\n\n\nNOT_IN_USE (No longer used or deprecated)\n\n\n\n\n\n\nTeam Request\n uses all the machine except the ones with the \nNOT_IN_USE\n status.\n\n\nMachine photo field is optional.\n\n\nScheduled Assemblers\n is the total number of assemblers to be used in the \nTeam Request\n process a.k.a. scheduling.\n\n\nLead to Machine Ratio\n is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means \none lead - two machines\n. \n\n\n\n\n\n\nUpdate Machine\n\n\nClick on the pencial icon to edit a machine details.\n\n\n\n\nDelete Machine\n\n\nClick on the bin icon to delete a machine.\n\n\n\n\nList Machine\n\n\nList all the Machines. There are some important columns to notice:\n\n\n\n\nScheduled Assemblers\n Column\n\n\n\n\nThis column shows the number of scheduled assemblers (workers). The \nTeam Request\n [Employees \n Team Request] uses this number to form a team. \nx2\n means two assemblers will be assigned to that machine.\n\n\n\n\nOrders\n Column\n\n\n\n\nThis column shows the number of assemblers of the current \nIN_PROGRESS\n order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.\n\n\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is overstaff.\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is understaff.", 
             "title": "Machine Setup"
         }, 
         {
             "location": "/machine/#machine", 
-            "text": "", 
+            "text": "Machines are required for the order and production entry creation, and team scheduling.", 
             "title": "Machine"
+        }, 
+        {
+            "location": "/machine/#add-new-machine", 
+            "text": "In the  Machine  section, click on  Create  tab.   Machine name should be posted on the actual machine so that the user can match during the data entry.  Status has   ON   OFF (shut down to save power)  BORKEN (currently fixing on the issues)  NOT_IN_USE (No longer used or deprecated)    Team Request  uses all the machine except the ones with the  NOT_IN_USE  status.  Machine photo field is optional.  Scheduled Assemblers  is the total number of assemblers to be used in the  Team Request  process a.k.a. scheduling.  Lead to Machine Ratio  is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means  one lead - two machines .", 
+            "title": "Add New Machine"
+        }, 
+        {
+            "location": "/machine/#update-machine", 
+            "text": "Click on the pencial icon to edit a machine details.", 
+            "title": "Update Machine"
+        }, 
+        {
+            "location": "/machine/#delete-machine", 
+            "text": "Click on the bin icon to delete a machine.", 
+            "title": "Delete Machine"
+        }, 
+        {
+            "location": "/machine/#list-machine", 
+            "text": "List all the Machines. There are some important columns to notice:   Scheduled Assemblers  Column   This column shows the number of scheduled assemblers (workers). The  Team Request  [Employees   Team Request] uses this number to form a team.  x2  means two assemblers will be assigned to that machine.   Orders  Column   This column shows the number of assemblers of the current  IN_PROGRESS  order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.   If  Scheduled Assemblers     Orders  xN counts, that means the machine is overstaff.  If  Scheduled Assemblers     Orders  xN counts, that means the machine is understaff.", 
+            "title": "List Machine"
         }, 
         {
             "location": "/product/", 
@@ -104,6 +109,21 @@
             "location": "/shift/#shift", 
             "text": "", 
             "title": "Shift"
+        }, 
+        {
+            "location": "/user/", 
+            "text": "Users and Roles\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
+            "title": "User Setup"
+        }, 
+        {
+            "location": "/user/#users-and-roles", 
+            "text": "", 
+            "title": "Users and Roles"
+        }, 
+        {
+            "location": "/user/#user-list", 
+            "text": "View all users.   Go to Employees   User", 
+            "title": "User List"
         }, 
         {
             "location": "/team/", 
