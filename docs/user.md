@@ -8,7 +8,7 @@ User is one essential entities for the application to work beginning from log in
 
 New user can be added via 
 
-1. `Employee` > `User` : __Create__ tab or 
+### 1. `Employee` > `User` : __Create__ tab or 
 
 | Field | Type | Description
 |-------|------|-----------
@@ -28,7 +28,7 @@ New user can be added via
 ![](img/new-user.png)
 
 
-2. `Login` page > `register for an account` link at the bottom of the page.
+### 2. `Login` page > `register for an account` link at the bottom of the page.
 
 ![](img/register-from-login.png)
 
