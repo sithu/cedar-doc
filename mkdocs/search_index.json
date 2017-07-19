@@ -112,13 +112,23 @@
         }, 
         {
             "location": "/product/", 
-            "text": "Product", 
+            "text": "Product\n\n\nProduct is the core part of the production management system and it has relationship to production entry, machine, color, and user or employee.\n\n\nCreate Product\n\n\nA product is defined by the following fields:\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nString\n\n\nUnique product name\n\n\n\n\n\n\nImage\n\n\nPNG, JPG or JPEG\n\n\nproduct photo - File size: the smaller is the better. Image file name must be unique!\n\n\n\n\n\n\nColors\n\n\nColor\n\n\none or more colors\n\n\n\n\n\n\nMulti Colors Ratio*\n\n\nString\n\n\nIf a product has multiple colors, you can define a ratio: 50% (Green) - 50% (Red), 50+50 = 100 quantity\n\n\n\n\n\n\nDefault Machine\n\n\nMachine\n\n\nIn production of any order for this product, this default machine will always be used.\n\n\n\n\n\n\nWeight (g)\n\n\nInteger (x \n 0)\n\n\nProduct weight in gram. The value must be greater than zero.\n\n\n\n\n\n\nTime To Build (sec)\n\n\nInteger (x \n 0)\n\n\nEstimated time to build one item in seconds.\n\n\n\n\n\n\nPrice\n\n\nInteger (x \n 0)\n\n\nSelling price (Optional)\n\n\n\n\n\n\nEmployee Required\n\n\nInteger (x \n 0)\n\n\nNumber of assemblers required excluding the team lead\n\n\n\n\n\n\nRaw Material Unit Weight (g)\n\n\nInteger (x \n 0)\n\n\nRaw material single unit (per bag) weight in gram\n\n\n\n\n\n\n\n\n\n\n*If you do not want multi-colors combination, you can simply setup a different product for each color.\n\n\n\n\n\n\nView details, Edit, and Delete\n\n\nSame as Machine's view, edit, and delete.", 
             "title": "Product Setup"
         }, 
         {
             "location": "/product/#product", 
-            "text": "", 
+            "text": "Product is the core part of the production management system and it has relationship to production entry, machine, color, and user or employee.", 
             "title": "Product"
+        }, 
+        {
+            "location": "/product/#create-product", 
+            "text": "A product is defined by the following fields:     Field  Type  Description      Name  String  Unique product name    Image  PNG, JPG or JPEG  product photo - File size: the smaller is the better. Image file name must be unique!    Colors  Color  one or more colors    Multi Colors Ratio*  String  If a product has multiple colors, you can define a ratio: 50% (Green) - 50% (Red), 50+50 = 100 quantity    Default Machine  Machine  In production of any order for this product, this default machine will always be used.    Weight (g)  Integer (x   0)  Product weight in gram. The value must be greater than zero.    Time To Build (sec)  Integer (x   0)  Estimated time to build one item in seconds.    Price  Integer (x   0)  Selling price (Optional)    Employee Required  Integer (x   0)  Number of assemblers required excluding the team lead    Raw Material Unit Weight (g)  Integer (x   0)  Raw material single unit (per bag) weight in gram      *If you do not want multi-colors combination, you can simply setup a different product for each color.", 
+            "title": "Create Product"
+        }, 
+        {
+            "location": "/product/#view-details-edit-and-delete", 
+            "text": "Same as Machine's view, edit, and delete.", 
+            "title": "View details, Edit, and Delete"
         }, 
         {
             "location": "/shift/", 
