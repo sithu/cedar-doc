@@ -6,13 +6,13 @@
 
 In order to create teams for any number of days, you need to submit a `Team Request`. The team request will check:
 
-* 1. Employee availability (isActive or not) and filter out the `lead` and `assembler` roles
-* 2. Machine availability excluding `NOT_IN_USE`.
+* [1] Employee availability (isActive or not) and filter out the `lead` and `assembler` roles
+* [2] Machine availability excluding `NOT_IN_USE`.
 
 and it will then form teams by `randomly` selecting the `assembler` and `lead` users and using
 
-* 1. Scheduled Assemblers  
-* 2. Lead to Machine Ratio 
+* [1] Scheduled Assemblers  
+* [2] Lead to Machine Ratio 
 
 settings defined in each machine. For example, if Machine A sets `Scheduled Assemblers` to `2`, the team request/builder will allocate two assemblers to the Machine A and likewise to `lead`.
 

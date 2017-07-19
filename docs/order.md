@@ -1,6 +1,23 @@
 # Order and Production Entry
 
-## 1. Check Orders
+## 1. Add Order
+
+`Order` > `Create` tab
+
+![](img/add-order.png)
+
+When you create a new order, you can name order with product name like Chair and order quantity so that we can easily track in dashboard. Example: Chair x 1000 Order
+
+| Field | Type | Description
+|-------|------|-----------
+| Name | String | Order name
+| Product | Product | Product selection
+| Quantity | Integer [ x > 0 ] | Order quantity
+| Assigned Machine | Machine | If you want to override the default machine set by the product (Create Product), you can assign any machine. The default machine from product will be used if you leave it as blank. 
+| Note | String | A note to the order
+
+
+## 2. Check Order before Adding Production Entry
 Once you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.
 
 Before you create a new Production Entry, first view the order list and check for 
@@ -23,7 +40,7 @@ In the Order Id 3 and 4, there is no production entry and these orders are the o
 > The production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.
 
 
-## 2. Create Production Entries
+## 3. Create Production Entries
 
 Now, click on `Production Entry` tab from the menu bar and see the existing production entries.
 
@@ -48,7 +65,7 @@ Repeat the same steps for all the orders that you want to process for the curren
 [Create Order Video](https://player.vimeo.com/video/225953269)
 
 
-## 3. Update Production Entries
+## 4. Update Production Entries
 
 Before you update a production entry, check `Remaning` count first. Click edit button :black_nib: on the production entry that you are going to update.
 
