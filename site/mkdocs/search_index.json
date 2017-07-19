@@ -58,7 +58,7 @@
         {
             "location": "/machine/", 
             "text": "Machine\n\n\nMachines are required for the order and production entry creation, and team scheduling.\n\n\nAdd New Machine\n\n\nIn the \nMachine\n section, click on \nCreate\n tab.\n\n\n\n\nMachine name should be posted on the actual machine so that the user can match during the data entry.\n\n\nStatus\n\n\nON \n\n\nOFF (shut down to save power)\n\n\nBROKEN (currently fixing on the issues)\n\n\nNOT_IN_USE (No longer used or deprecated)\n\n\n\n\n\n\nTeam Request\n uses all the machine except the ones with the \nNOT_IN_USE\n status.\n\n\nMachine photo field is optional.\n\n\nScheduled Assemblers\n is the total number of assemblers to be used in the \nTeam Request\n process a.k.a. scheduling.\n\n\nLead to Machine Ratio\n is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means \none lead - two machines\n. \n\n\n\n\n\n\nUpdate Machine\n\n\nClick on the \npencil\n icon to edit a machine details.\n\n\n\n\nDelete Machine\n\n\nClick on the bin icon to delete a machine.\n\n\n\n\nList Machine\n\n\nList all the Machines. There are some important columns to notice:\n\n\n\n\nScheduled Assemblers\n Column\n\n\n\n\nThis column shows the number of scheduled assemblers (workers). The \nTeam Request\n [Employees \n Team Request] uses this number to form a team. \nx2\n means two assemblers will be assigned to that machine.\n\n\n\n\nOrders\n Column\n\n\n\n\nThis column shows the number of assemblers of the current \nIN_PROGRESS\n order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.\n\n\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is overstaff.\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is understaff.", 
-            "title": "Machine Setup"
+            "title": "Machine"
         }, 
         {
             "location": "/machine/#machine", 
@@ -88,7 +88,7 @@
         {
             "location": "/color/", 
             "text": "Color\n\n\nOne of the aspects of product is color. Therefore, colors should be created first before product.\n\n\nAdd New Color\n\n\nTo add new color, click the \nCreate\n tab in the Color section. Then, select color by clicking the color bar and give the color name you like. Finally, click \nSave\n.\n\n\n\n\nView, Edit, and Delete\n\n\n\n\nClick \neye\n icon for viewing a color details.\n\n\nClick \npencil\n icon for editing a color.\n\n\nClick \nbin\n icon for deleting a color.\n\n\n\n\nMulti-Delete\n\n\nIf you want to delete multiple items, select each one and click \nWith Selected \n Delete\n link.", 
-            "title": "Color Setup"
+            "title": "Color"
         }, 
         {
             "location": "/color/#color", 
@@ -113,7 +113,7 @@
         {
             "location": "/product/", 
             "text": "Product\n\n\nProduct is the core part of the production management system and it has relationship to production entry, machine, color, and user or employee.\n\n\nCreate Product\n\n\nA product is defined by the following fields:\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nString\n\n\nUnique product name\n\n\n\n\n\n\nImage\n\n\nPNG, JPG or JPEG\n\n\nproduct photo - File size: the smaller is the better. Image file name must be unique!\n\n\n\n\n\n\nColors\n\n\nColor\n\n\none or more colors\n\n\n\n\n\n\nMulti Colors Ratio*\n\n\nString\n\n\nIf a product has multiple colors, you can define a ratio: 50% (Green) - 50% (Red), 50+50 = 100 quantity\n\n\n\n\n\n\nDefault Machine\n\n\nMachine\n\n\nIn production of any order for this product, this default machine will always be used.\n\n\n\n\n\n\nWeight (g)\n\n\nInteger (x \n 0)\n\n\nProduct weight in gram. The value must be greater than zero.\n\n\n\n\n\n\nTime To Build (sec)\n\n\nInteger (x \n 0)\n\n\nEstimated time to build one item in seconds.\n\n\n\n\n\n\nPrice\n\n\nInteger (x \n 0)\n\n\nSelling price (Optional)\n\n\n\n\n\n\nEmployee Required\n\n\nInteger (x \n 0)\n\n\nNumber of assemblers required excluding the team lead\n\n\n\n\n\n\nRaw Material Unit Weight (g)\n\n\nInteger (x \n 0)\n\n\nRaw material single unit (per bag) weight in gram\n\n\n\n\n\n\n\n\n\n\n*If you do not want multi-colors combination, you can simply setup a different product for each color.\n\n\n\n\n\n\nView details, Edit, and Delete\n\n\nSame as Machine's view, edit, and delete.", 
-            "title": "Product Setup"
+            "title": "Product"
         }, 
         {
             "location": "/product/#product", 
@@ -132,18 +132,18 @@
         }, 
         {
             "location": "/shift/", 
-            "text": "Shift", 
-            "title": "Shift Setup"
+            "text": "Shift\n\n\nA shift is a working hour time window in 24-hour day.\n\n\nGo to \nEmployee\n \n \nShift\n to view, edit, create, and delete shifts.\n\n\nThe total hours for all shifts must be less than or equal to 24 hours.", 
+            "title": "Shift"
         }, 
         {
             "location": "/shift/#shift", 
-            "text": "", 
+            "text": "A shift is a working hour time window in 24-hour day.  Go to  Employee     Shift  to view, edit, create, and delete shifts.  The total hours for all shifts must be less than or equal to 24 hours.", 
             "title": "Shift"
         }, 
         {
             "location": "/user/", 
             "text": "User and Role\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
-            "title": "User Setup"
+            "title": "User"
         }, 
         {
             "location": "/user/#user-and-role", 
@@ -158,7 +158,7 @@
         {
             "location": "/team/", 
             "text": "Team", 
-            "title": "Team (Schedule) Setup"
+            "title": "Team (Schedule)"
         }, 
         {
             "location": "/team/#team", 
