@@ -87,11 +87,13 @@
     <a class="current" href="./">User</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#user-and-role">User and Role</a></li>
+    <li class="toctree-l2"><a href="#user">User</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#user-list">User List</a></li>
+            <li><a class="toctree-l3" href="#add-user">Add User</a></li>
+        
+            <li><a class="toctree-l3" href="#view-edit-and-delete">View, Edit, and Delete</a></li>
         
         </ul>
     
@@ -156,13 +158,87 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="user-and-role">User and Role</h1>
-<h2 id="user-list">User List</h2>
-<ul>
-<li>View all users.</li>
-</ul>
-<p>Go to Employees &gt; User</p>
-<p><img alt="userlist" src="../img/user-list.png" /></p>
+                <h1 id="user">User</h1>
+<p><code>Employee</code> &gt; <code>User</code></p>
+<p>User is one essential entity for the application to work beginning from log in to team scheduling.</p>
+<h2 id="add-user">Add User</h2>
+<p>New user can be added via </p>
+<ol>
+<li><code>Employee</code> &gt; <code>User</code> : <strong>Create</strong> tab or </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>String</td>
+<td>User/Employee fullname</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Option</td>
+<td><code>M</code> for Male, <code>F</code> for Female</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>String</td>
+<td>Email is required for users who need to login to the application.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>String</td>
+<td>Password in this form is plain text so other can see it. If you want user's password encrypted, use the below approach to create new users.</td>
+</tr>
+<tr>
+<td>Roles*</td>
+<td>Option</td>
+<td>Select a role from the dropdown list or you can leave it as empty if you do not want the user to access the application.</td>
+</tr>
+<tr>
+<td>Shift</td>
+<td>Option</td>
+<td>Select a shift for the user</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>String</td>
+<td>User phone number</td>
+</tr>
+<tr>
+<td>Active</td>
+<td><code>YES/NO</code></td>
+<td><code>YES</code> - User works for the company, <code>NO</code> - User no longer works for the company.</td>
+</tr>
+<tr>
+<td>Is In</td>
+<td><code>YES/NO</code></td>
+<td><code>YES</code> - User is checked in, <code>NO</code> - User is out.</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>PNG, JPG, JPEG</td>
+<td>User photo</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>Team Request</code> (Scheduling) uses users with either <code>lead</code> or <code>assembler</code> role only. Other roles are excluded.</p>
+</blockquote>
+<p><img alt="" src="../img/new-user.png" /></p>
+<ol>
+<li><code>Login</code> page &gt; <code>register for an account</code> link at the bottom of the page.</li>
+</ol>
+<p><img alt="" src="../img/register-from-login.png" /></p>
+<p><img alt="" src="../img/register-user.png" /></p>
+<h2 id="view-edit-and-delete">View, Edit, and Delete</h2>
+<p>Same as others: <code>Employees</code> &gt; <code>User</code> </p>
+<p><img alt="" src="../img/user-list.png" /></p>
               
             </div>
           </div>
