@@ -7,10 +7,10 @@ Machines are required for the order and production entry creation, and team sche
 In the `Machine` section, click on `Create` tab.
 
 * Machine name should be posted on the actual machine so that the user can match during the data entry.
-* Status has 
+* Status
     * ON 
     * OFF (shut down to save power)
-    * BORKEN (currently fixing on the issues)
+    * BROKEN (currently fixing on the issues)
     * NOT_IN_USE (No longer used or deprecated)
 * `Team Request` uses all the machine except the ones with the `NOT_IN_USE` status.
 * Machine photo field is optional.
