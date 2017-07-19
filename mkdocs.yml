@@ -8,6 +8,7 @@ pages:
 - ['index.md', 'Installation']
 - ['getting-started.md', 'Run the Application']
 - ['machine.md', 'Machine Setup']
+- ['color.md', 'Color Setup']
 - ['product.md', 'Product Setup']
 - ['shift.md', 'Shift Setup']
 - ['user.md', 'User Setup']

@@ -1,8 +1,6 @@
 # User Manual
 
-## Pre-requisites 
-
-### Software requirements
+## Software requirements
 
 * Although the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.
 * A reliable Internet connection on the server that you are installing.
@@ -22,12 +20,13 @@ bower --version
 
 ![](img/software-pre.png)
 
-### Hardware requirements
+## Hardware requirements
 
 * Dual Core Intel or AMD CPU with 64-bit Architecture.
 * 4 GB Memory.
 * 20 GB SSD or SATA Hard Drive.
 * Ethernet Port Network or Wifi
+
 
 ## Installation
 

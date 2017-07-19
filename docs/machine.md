@@ -23,7 +23,7 @@ In the `Machine` section, click on `Create` tab.
 
 ## Update Machine
 
-Click on the pencial icon to edit a machine details.
+Click on the `pencil` icon to edit a machine details.
 
 ![](img/edit-machine.png)
 

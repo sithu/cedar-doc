@@ -1,4 +1,4 @@
-# Orders and Production Entries
+# Order and Production Entry
 
 ## 1. Check Orders
 Once you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.

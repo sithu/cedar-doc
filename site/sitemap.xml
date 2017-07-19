@@ -27,6 +27,14 @@
 
     
     <url>
+     <loc>/color/</loc>
+     <lastmod>2017-07-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/product/</loc>
      <lastmod>2017-07-18</lastmod>
      <changefreq>daily</changefreq>
