@@ -92,7 +92,15 @@
     <a class="current" href="./">Team (Schedule)</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#team">Team</a></li>
+    <li class="toctree-l2"><a href="#team-request-and-team">Team Request and Team</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#team-request">Team Request</a></li>
+        
+            <li><a class="toctree-l3" href="#team">Team</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -150,7 +158,51 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="team">Team</h1>
+                <h1 id="team-request-and-team">Team Request and Team</h1>
+<h2 id="team-request">Team Request</h2>
+<p><code>Employee</code> &gt; <code>Team Request</code></p>
+<p>In order to create teams for any number of days, you need to submit a <code>Team Request</code>. The team request will check:</p>
+<ul>
+<li>
+<ol>
+<li>Employee availability (isActive or not) and filter out the <code>lead</code> and <code>assembler</code> roles</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Machine availability excluding <code>NOT_IN_USE</code>.</li>
+</ol>
+</li>
+</ul>
+<p>and it will then form teams by <code>randomly</code> selecting the <code>assembler</code> and <code>lead</code> users and using</p>
+<ul>
+<li>
+<ol>
+<li>Scheduled Assemblers  </li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Lead to Machine Ratio </li>
+</ol>
+</li>
+</ul>
+<p>settings defined in each machine. For example, if Machine A sets <code>Scheduled Assemblers</code> to <code>2</code>, the team request/builder will allocate two assemblers to the Machine A and likewise to <code>lead</code>.</p>
+<p><img alt="" src="../img/create-team-request.png" /></p>
+<p>In the above screenshot, a new team request is making for one week schedule with Sunday as a day off.</p>
+<h3 id="team-request-list">Team Request List</h3>
+<p><img alt="" src="../img/team-request-list.png" /></p>
+<blockquote>
+<p>Unlike other entities, do not try to edit any team requests as it will not re-generate (re-schedule) the teams.</p>
+</blockquote>
+<h2 id="team">Team</h2>
+<p>Once you submit a team reqeust, you can check the output (teams) a.k.a <code>Schedule</code> at <code>Employee</code> &gt; <code>Team</code>.</p>
+<p><img alt="" src="../img/team-list.png" /></p>
+<blockquote>
+<p>When you have more assemblers/leads than the number of machines, all extra assemblers and leads will go into <code>Standbys</code>. The <code>Standbys</code> resources can be distributed into any understaff machines.</p>
+</blockquote>
+<h3 id="view-edit-and-delete">View, Edit, and Delete</h3>
+<p>You can view team detials, edit, and delete teams if needed.</p>
               
             </div>
           </div>

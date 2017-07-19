@@ -152,7 +152,7 @@
         }, 
         {
             "location": "/user/", 
-            "text": "User\n\n\nEmployee\n \n \nUser\n\n\nUser is one essential entities for the application to work beginning from log in to team scheduling.\n\n\nAdd User\n\n\nNew user can be added via \n\n\n1. \nEmployee\n \n \nUser\n : \nCreate\n tab or\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nString\n\n\nUser/Employee fullname\n\n\n\n\n\n\nGender\n\n\nOption\n\n\nM\n for Male, \nF\n for Female\n\n\n\n\n\n\nEmail\n\n\nString\n\n\nEmail is required for users who need to login to the application.\n\n\n\n\n\n\nPassword\n\n\nString\n\n\nPassword in this form is plain text so other can see it. If you want user's password encrypted, use the second approach to create new users from the Login page.\n\n\n\n\n\n\nRoles*\n\n\nOption\n\n\nSelect a role from the dropdown list or you can leave it as empty if you do not want the user to access the application.\n\n\n\n\n\n\nShift\n\n\nOption\n\n\nSelect a shift for the user\n\n\n\n\n\n\nPhone\n\n\nString\n\n\nUser phone number\n\n\n\n\n\n\nActive\n\n\nYES/NO\n\n\nYES\n - User works for the company, \nNO\n - User no longer works for the company.\n\n\n\n\n\n\nIs In\n\n\nYES/NO\n\n\nYES\n - User is checked in, \nNO\n - User is out.\n\n\n\n\n\n\nImage\n\n\nPNG, JPG, JPEG\n\n\nUser photo\n\n\n\n\n\n\n\n\n\n\nTeam Request\n (Scheduling) uses \nActive\n users with either \nlead\n or \nassembler\n role only. Other roles are excluded.\n\n\n\n\n\n\n2. \nLogin\n page \n \nregister for an account\n link at the bottom of the page.\n\n\n\n\n\n\nView, Edit, and Delete\n\n\nEmployees\n \n \nUser\n \n\n\nSame as others.", 
+            "text": "User\n\n\nEmployee\n \n \nUser\n\n\nUser is one essential entities for the application to work beginning from log in to team scheduling.\n\n\nAdd User\n\n\nNew user can be added via \n\n\n1. \nEmployee\n \n \nUser\n : \nCreate\n tab\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nString\n\n\nUser/Employee fullname\n\n\n\n\n\n\nGender\n\n\nOption\n\n\nM\n for Male, \nF\n for Female\n\n\n\n\n\n\nEmail\n\n\nString\n\n\nEmail is required for users who need to login to the application.\n\n\n\n\n\n\nPassword\n\n\nString\n\n\nPassword in this form is plain text so other can see it. If you want user's password encrypted, use the second approach to create new users from the Login page.\n\n\n\n\n\n\nRoles*\n\n\nOption\n\n\nSelect a role from the dropdown list or you can leave it as empty if you do not want the user to access the application.\n\n\n\n\n\n\nShift\n\n\nOption\n\n\nSelect a shift for the user\n\n\n\n\n\n\nPhone\n\n\nString\n\n\nUser phone number\n\n\n\n\n\n\nActive\n\n\nYES/NO\n\n\nYES\n - User works for the company, \nNO\n - User no longer works for the company.\n\n\n\n\n\n\nIs In\n\n\nYES/NO\n\n\nYES\n - User is checked in, \nNO\n - User is out.\n\n\n\n\n\n\nImage\n\n\nPNG, JPG, JPEG\n\n\nUser photo\n\n\n\n\n\n\n\n\n\n\nTeam Request\n (Scheduling) uses \nActive\n users with either \nlead\n or \nassembler\n role only. Other roles are excluded.\n\n\n\n\n\n\n2. \nLogin\n page \n \nregister for an account\n link at the bottom of the page.\n\n\n\n\n\n\nView, Edit, and Delete\n\n\nEmployees\n \n \nUser\n \n\n\nSame as others.", 
             "title": "User"
         }, 
         {
@@ -166,9 +166,9 @@
             "title": "Add User"
         }, 
         {
-            "location": "/user/#1-employee-user-create-tab-or", 
+            "location": "/user/#1-employee-user-create-tab", 
             "text": "Field  Type  Description      Name  String  User/Employee fullname    Gender  Option  M  for Male,  F  for Female    Email  String  Email is required for users who need to login to the application.    Password  String  Password in this form is plain text so other can see it. If you want user's password encrypted, use the second approach to create new users from the Login page.    Roles*  Option  Select a role from the dropdown list or you can leave it as empty if you do not want the user to access the application.    Shift  Option  Select a shift for the user    Phone  String  User phone number    Active  YES/NO  YES  - User works for the company,  NO  - User no longer works for the company.    Is In  YES/NO  YES  - User is checked in,  NO  - User is out.    Image  PNG, JPG, JPEG  User photo      Team Request  (Scheduling) uses  Active  users with either  lead  or  assembler  role only. Other roles are excluded.", 
-            "title": "1. Employee &gt; User : Create tab or"
+            "title": "1. Employee &gt; User : Create tab"
         }, 
         {
             "location": "/user/#2-login-page-register-for-an-account-link-at-the-bottom-of-the-page", 
@@ -182,13 +182,33 @@
         }, 
         {
             "location": "/team/", 
-            "text": "Team", 
+            "text": "Team Request and Team\n\n\nTeam Request\n\n\nEmployee\n \n \nTeam Request\n\n\nIn order to create teams for any number of days, you need to submit a \nTeam Request\n. The team request will check:\n\n\n\n\n\n\n\n\nEmployee availability (isActive or not) and filter out the \nlead\n and \nassembler\n roles\n\n\n\n\n\n\n\n\n\n\nMachine availability excluding \nNOT_IN_USE\n.\n\n\n\n\n\n\n\n\nand it will then form teams by \nrandomly\n selecting the \nassembler\n and \nlead\n users and using\n\n\n\n\n\n\n\n\nScheduled Assemblers  \n\n\n\n\n\n\n\n\n\n\nLead to Machine Ratio \n\n\n\n\n\n\n\n\nsettings defined in each machine. For example, if Machine A sets \nScheduled Assemblers\n to \n2\n, the team request/builder will allocate two assemblers to the Machine A and likewise to \nlead\n.\n\n\n\n\nIn the above screenshot, a new team request is making for one week schedule with Sunday as a day off.\n\n\nTeam Request List\n\n\n\n\n\n\nUnlike other entities, do not try to edit any team requests as it will not re-generate (re-schedule) the teams.\n\n\n\n\nTeam\n\n\nOnce you submit a team reqeust, you can check the output (teams) a.k.a \nSchedule\n at \nEmployee\n \n \nTeam\n.\n\n\n\n\n\n\nWhen you have more assemblers/leads than the number of machines, all extra assemblers and leads will go into \nStandbys\n. The \nStandbys\n resources can be distributed into any understaff machines.\n\n\n\n\nView, Edit, and Delete\n\n\nYou can view team detials, edit, and delete teams if needed.", 
             "title": "Team (Schedule)"
         }, 
         {
-            "location": "/team/#team", 
+            "location": "/team/#team-request-and-team", 
             "text": "", 
+            "title": "Team Request and Team"
+        }, 
+        {
+            "location": "/team/#team-request", 
+            "text": "Employee     Team Request  In order to create teams for any number of days, you need to submit a  Team Request . The team request will check:     Employee availability (isActive or not) and filter out the  lead  and  assembler  roles      Machine availability excluding  NOT_IN_USE .     and it will then form teams by  randomly  selecting the  assembler  and  lead  users and using     Scheduled Assemblers        Lead to Machine Ratio      settings defined in each machine. For example, if Machine A sets  Scheduled Assemblers  to  2 , the team request/builder will allocate two assemblers to the Machine A and likewise to  lead .   In the above screenshot, a new team request is making for one week schedule with Sunday as a day off.", 
+            "title": "Team Request"
+        }, 
+        {
+            "location": "/team/#team-request-list", 
+            "text": "Unlike other entities, do not try to edit any team requests as it will not re-generate (re-schedule) the teams.", 
+            "title": "Team Request List"
+        }, 
+        {
+            "location": "/team/#team", 
+            "text": "Once you submit a team reqeust, you can check the output (teams) a.k.a  Schedule  at  Employee     Team .    When you have more assemblers/leads than the number of machines, all extra assemblers and leads will go into  Standbys . The  Standbys  resources can be distributed into any understaff machines.", 
             "title": "Team"
+        }, 
+        {
+            "location": "/team/#view-edit-and-delete", 
+            "text": "You can view team detials, edit, and delete teams if needed.", 
+            "title": "View, Edit, and Delete"
         }, 
         {
             "location": "/order/", 

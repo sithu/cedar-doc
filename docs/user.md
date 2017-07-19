@@ -8,7 +8,7 @@ User is one essential entities for the application to work beginning from log in
 
 New user can be added via 
 
-### 1. `Employee` > `User` : __Create__ tab or 
+### 1. `Employee` > `User` : __Create__ tab
 
 | Field | Type | Description
 |-------|------|-----------
