@@ -74,6 +74,14 @@
             
     <li class="toctree-l2"><a href="#product">Product</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l3" href="#create-product">Create Product</a></li>
+        
+            <li><a class="toctree-l3" href="#view-details-edit-and-delete">View details, Edit, and Delete</a></li>
+        
+        </ul>
+    
 
     </ul>
 	    </li>
@@ -146,6 +154,76 @@
             <div class="section">
               
                 <h1 id="product">Product</h1>
+<p>Product is the core part of the production management system and it has relationship to production entry, machine, color, and user or employee.</p>
+<h2 id="create-product">Create Product</h2>
+<p>A product is defined by the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>String</td>
+<td>Unique product name</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>PNG, JPG or JPEG</td>
+<td>product photo - File size: the smaller is the better. Image file name must be unique!</td>
+</tr>
+<tr>
+<td>Colors</td>
+<td>Color</td>
+<td>one or more colors</td>
+</tr>
+<tr>
+<td>Multi Colors Ratio*</td>
+<td>String</td>
+<td>If a product has multiple colors, you can define a ratio: 50% (Green) - 50% (Red), 50+50 = 100 quantity</td>
+</tr>
+<tr>
+<td>Default Machine</td>
+<td>Machine</td>
+<td>In production of any order for this product, this default machine will always be used.</td>
+</tr>
+<tr>
+<td>Weight (g)</td>
+<td>Integer (x &gt; 0)</td>
+<td>Product weight in gram. The value must be greater than zero.</td>
+</tr>
+<tr>
+<td>Time To Build (sec)</td>
+<td>Integer (x &gt; 0)</td>
+<td>Estimated time to build one item in seconds.</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Integer (x &gt; 0)</td>
+<td>Selling price (Optional)</td>
+</tr>
+<tr>
+<td>Employee Required</td>
+<td>Integer (x &gt; 0)</td>
+<td>Number of assemblers required excluding the team lead</td>
+</tr>
+<tr>
+<td>Raw Material Unit Weight (g)</td>
+<td>Integer (x &gt; 0)</td>
+<td>Raw material single unit (per bag) weight in gram</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>*If you do not want multi-colors combination, you can simply setup a different product for each color.</p>
+</blockquote>
+<p><img alt="" src="../img/new-product.png" /></p>
+<h2 id="view-details-edit-and-delete">View details, Edit, and Delete</h2>
+<p>Same as Machine's view, edit, and delete.</p>
               
             </div>
           </div>
