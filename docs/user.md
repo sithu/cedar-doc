@@ -15,7 +15,7 @@ New user can be added via
 | Name  | String | User/Employee fullname
 | Gender | Option | `M` for Male, `F` for Female 
 | Email | String | Email is required for users who need to login to the application.
-| Password | String | Password in this form is plain text so other can see it. If you want user's password encrypted, use the below approach to create new users.
+| Password | String | Password in this form is plain text so other can see it. If you want user's password encrypted, use the second approach to create new users from the Login page.
 | Roles* | Option | Select a role from the dropdown list or you can leave it as empty if you do not want the user to access the application. 
 | Shift | Option | Select a shift for the user
 | Phone | String | User phone number
