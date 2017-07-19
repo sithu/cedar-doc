@@ -11,6 +11,7 @@ pages:
 - ['color.md', 'Color']
 - ['product.md', 'Product']
 - ['shift.md', 'Shift']
+- ['role.md', 'Role']
 - ['user.md', 'User']
 - ['team.md', 'Team (Schedule)']
 - ['order.md', 'Order and Production Entry']

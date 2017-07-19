@@ -141,6 +141,16 @@
             "title": "Shift"
         }, 
         {
+            "location": "/role/", 
+            "text": "Role\n\n\nA role defines a set of permissions and it can be assigned to users. By default, the application comes with the following roles:\n\n\n\n\n\n\n\n\nRole\n\n\nPermission\n\n\n\n\n\n\n\n\n\n\nassembler\n\n\ncan_read\n\n\n\n\n\n\nlead\n\n\ncan_read, can_edit\n\n\n\n\n\n\nmanager\n\n\ncan_read, can_edit, can_create, can_view_details\n\n\n\n\n\n\nadmin\n\n\ncan_read, can_edit, can_create, can_view_details, can_delete, can_export\n\n\n\n\n\n\n\n\nIn order to update production entries, one needs to have at least the \nlead\n role. Even if you create a new role, you cannot apply any permission to it as these roles are pre-defined and built into the application.", 
+            "title": "Role"
+        }, 
+        {
+            "location": "/role/#role", 
+            "text": "A role defines a set of permissions and it can be assigned to users. By default, the application comes with the following roles:     Role  Permission      assembler  can_read    lead  can_read, can_edit    manager  can_read, can_edit, can_create, can_view_details    admin  can_read, can_edit, can_create, can_view_details, can_delete, can_export     In order to update production entries, one needs to have at least the  lead  role. Even if you create a new role, you cannot apply any permission to it as these roles are pre-defined and built into the application.", 
+            "title": "Role"
+        }, 
+        {
             "location": "/user/", 
             "text": "User and Role\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
             "title": "User"
