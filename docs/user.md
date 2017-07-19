@@ -2,7 +2,7 @@
 
 `Employee` > `User`
 
-User is one essential entity for the application to work beginning from log in to team scheduling.
+User is one essential entities for the application to work beginning from log in to team scheduling.
 
 ## Add User
 
@@ -23,7 +23,7 @@ New user can be added via
 | Is In | `YES/NO` | `YES` - User is checked in, `NO` - User is out.
 | Image | PNG, JPG, JPEG | User photo
 
-> `Team Request` (Scheduling) uses users with either `lead` or `assembler` role only. Other roles are excluded.
+> `Team Request` (Scheduling) uses `Active` users with either `lead` or `assembler` role only. Other roles are excluded.
 
 ![](img/new-user.png)
 
@@ -36,7 +36,9 @@ New user can be added via
 
 ## View, Edit, and Delete
 
-Same as others: `Employees` > `User` 
+`Employees` > `User` 
+
+Same as others.
 
 ![](img/user-list.png)
 
