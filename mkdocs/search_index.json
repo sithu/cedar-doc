@@ -2,18 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "User Manual\n\n\nPre-requisites\n\n\nSoftware requirements\n\n\n\n\nAlthough the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static IP or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port \n5000\n for incoming traffic to the server.\n\n\nCheck the server has installed Python 2.7.x.\n\n\n\n\npython --version\n\n\n\n\n\n\nCheck the bower package manager tool is installed.\n\n\n\n\nbower --version\n\n\n\n\n\n\nHardware requirements\n\n\n\n\nDual Core Intel or AMD CPU with 64-bit Architecture.\n\n\n4 GB Memory.\n\n\n20 GB SSD or SATA Hard Drive.\n\n\nEthernet Port Network or Wifi\n\n\n\n\nInstallation\n\n\nExecute the following commands in a Linux shell Terminal.\n\n\n\n\nPing to check the Internet connection. Press Ctl+D to exit.\n\n\n\n\ncedar@ubuntu:~/app$ ping www.google.com\nPING www.google.com (172.217.6.68) 56(84) bytes of data.\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=1 ttl=128 time=12.0 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=2 ttl=128 time=14.2 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=3 ttl=128 time=13.3 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=4 ttl=128 time=13.9 ms\n^C\n--- www.google.com ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3006ms\nrtt min/avg/max/mdev = 12.046/13.386/14.210/0.844 ms\n\n\n\n\n\n\nCreate a \napp\n folder under the current user home path. E.g. /home/cedar. Delete the \napp\n folder to ensure there is no existing one.\n\n\n\n\ncedar@ubuntu:~$ rm -rf app\ncedar@ubuntu:~$ mkdir app\n\n\n\n\n\n\nCreate a \nbackup\n folder to store database backup files.\n\n\n\n\ncedar@ubuntu:~$ mkdir backup\n\n\n\n\n\n\ncd app\n - Go inside the app folder you just created.\n\n\n\n\ncedar@ubuntu:~$ cd app\n\n\n\n\n\n\nCheck the current path is under \n/home/cedar/app\n\n\n\n\ncedar@ubuntu:~/app$ pwd\n/home/cedar/app\n\n\n\n\n\n\nDownload the source code:\n\n\n\n\ncedar@ubuntu:~/app$ git clone https://github.com/sithu/prod-mgmt\n\n\n\n\n\n\nGo inside the prod-mgmt folder.\n\n\n\n\ncedar@ubuntu:~/app$ cd prod-mgmt\n\n\n\n\n\n\nCreate a Python virtual enviroment.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ virtualenv flask\n\n\n\n\nThe program 'virtualenv' is currently not installed. You can install it by typing:\nsudo apt install virtualenv\n\n\n\n\nIf you get this error, then you need to install \nvirtualenv\n via:\n\n\nIf it asks for password, enter Cedar's account password.\n\n\ncedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv\n\n\n\n\n\n\nLoad the virtual environment. Then, you should able to see \n(flask)\n at the beginning of the command prompt.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ . .env\n(flask) cedar@ubuntu:~/app/prod-mgmt$\n\n\n\n\n\n\nInstall all required Python PIP modules. At the end, you should see all the installed Python packages as below:\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nIf you get this error: \nfailed with error code 1 in /tmp/pip-build-g7tapu/Pillow/\n, then you run this apt-get install command and re-run the \npip install\n command.\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ sudo apt-get install python-dev\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nFinally, install all front-end JavaScript and CSS libraries.\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ bower install", 
+            "text": "User Manual\n\n\nSoftware requirements\n\n\n\n\nAlthough the application can run on any operation systems, this manual is target for Ubuntu Linux operation system.\n\n\nA reliable Internet connection on the server that you are installing.\n\n\nEither a static IP or dynamic IP assigned to the server.\n\n\nThe network or router must allow TCP port \n5000\n for incoming traffic to the server.\n\n\nCheck the server has installed Python 2.7.x.\n\n\n\n\npython --version\n\n\n\n\n\n\nCheck the bower package manager tool is installed.\n\n\n\n\nbower --version\n\n\n\n\n\n\nHardware requirements\n\n\n\n\nDual Core Intel or AMD CPU with 64-bit Architecture.\n\n\n4 GB Memory.\n\n\n20 GB SSD or SATA Hard Drive.\n\n\nEthernet Port Network or Wifi\n\n\n\n\nInstallation\n\n\nExecute the following commands in a Linux shell Terminal.\n\n\n\n\nPing to check the Internet connection. Press Ctl+D to exit.\n\n\n\n\ncedar@ubuntu:~/app$ ping www.google.com\nPING www.google.com (172.217.6.68) 56(84) bytes of data.\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=1 ttl=128 time=12.0 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=2 ttl=128 time=14.2 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=3 ttl=128 time=13.3 ms\n64 bytes from sfo07s17-in-f68.1e100.net (172.217.6.68): icmp_seq=4 ttl=128 time=13.9 ms\n^C\n--- www.google.com ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3006ms\nrtt min/avg/max/mdev = 12.046/13.386/14.210/0.844 ms\n\n\n\n\n\n\nCreate a \napp\n folder under the current user home path. E.g. /home/cedar. Delete the \napp\n folder to ensure there is no existing one.\n\n\n\n\ncedar@ubuntu:~$ rm -rf app\ncedar@ubuntu:~$ mkdir app\n\n\n\n\n\n\nCreate a \nbackup\n folder to store database backup files.\n\n\n\n\ncedar@ubuntu:~$ mkdir backup\n\n\n\n\n\n\ncd app\n - Go inside the app folder you just created.\n\n\n\n\ncedar@ubuntu:~$ cd app\n\n\n\n\n\n\nCheck the current path is under \n/home/cedar/app\n\n\n\n\ncedar@ubuntu:~/app$ pwd\n/home/cedar/app\n\n\n\n\n\n\nDownload the source code:\n\n\n\n\ncedar@ubuntu:~/app$ git clone https://github.com/sithu/prod-mgmt\n\n\n\n\n\n\nGo inside the prod-mgmt folder.\n\n\n\n\ncedar@ubuntu:~/app$ cd prod-mgmt\n\n\n\n\n\n\nCreate a Python virtual enviroment.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ virtualenv flask\n\n\n\n\nThe program 'virtualenv' is currently not installed. You can install it by typing:\nsudo apt install virtualenv\n\n\n\n\nIf you get this error, then you need to install \nvirtualenv\n via:\n\n\nIf it asks for password, enter Cedar's account password.\n\n\ncedar@ubuntu:~/app/prod-mgmt$ sudo apt install virtualenv\n\n\n\n\n\n\nLoad the virtual environment. Then, you should able to see \n(flask)\n at the beginning of the command prompt.\n\n\n\n\ncedar@ubuntu:~/app/prod-mgmt$ . .env\n(flask) cedar@ubuntu:~/app/prod-mgmt$\n\n\n\n\n\n\nInstall all required Python PIP modules. At the end, you should see all the installed Python packages as below:\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nIf you get this error: \nfailed with error code 1 in /tmp/pip-build-g7tapu/Pillow/\n, then you run this apt-get install command and re-run the \npip install\n command.\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ sudo apt-get install python-dev\n(flask) cedar@ubuntu:~/app/prod-mgmt$ pip install -r requirements.txt\n\n\n\n\n\n\nFinally, install all front-end JavaScript and CSS libraries.\n\n\n\n\n(flask) cedar@ubuntu:~/app/prod-mgmt$ bower install", 
             "title": "Installation"
         }, 
         {
             "location": "/#user-manual", 
             "text": "", 
             "title": "User Manual"
-        }, 
-        {
-            "location": "/#pre-requisites", 
-            "text": "", 
-            "title": "Pre-requisites"
         }, 
         {
             "location": "/#software-requirements", 
@@ -62,7 +57,7 @@
         }, 
         {
             "location": "/machine/", 
-            "text": "Machine\n\n\nMachines are required for the order and production entry creation, and team scheduling.\n\n\nAdd New Machine\n\n\nIn the \nMachine\n section, click on \nCreate\n tab.\n\n\n\n\nMachine name should be posted on the actual machine so that the user can match during the data entry.\n\n\nStatus has \n\n\nON \n\n\nOFF (shut down to save power)\n\n\nBORKEN (currently fixing on the issues)\n\n\nNOT_IN_USE (No longer used or deprecated)\n\n\n\n\n\n\nTeam Request\n uses all the machine except the ones with the \nNOT_IN_USE\n status.\n\n\nMachine photo field is optional.\n\n\nScheduled Assemblers\n is the total number of assemblers to be used in the \nTeam Request\n process a.k.a. scheduling.\n\n\nLead to Machine Ratio\n is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means \none lead - two machines\n. \n\n\n\n\n\n\nUpdate Machine\n\n\nClick on the pencial icon to edit a machine details.\n\n\n\n\nDelete Machine\n\n\nClick on the bin icon to delete a machine.\n\n\n\n\nList Machine\n\n\nList all the Machines. There are some important columns to notice:\n\n\n\n\nScheduled Assemblers\n Column\n\n\n\n\nThis column shows the number of scheduled assemblers (workers). The \nTeam Request\n [Employees \n Team Request] uses this number to form a team. \nx2\n means two assemblers will be assigned to that machine.\n\n\n\n\nOrders\n Column\n\n\n\n\nThis column shows the number of assemblers of the current \nIN_PROGRESS\n order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.\n\n\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is overstaff.\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is understaff.", 
+            "text": "Machine\n\n\nMachines are required for the order and production entry creation, and team scheduling.\n\n\nAdd New Machine\n\n\nIn the \nMachine\n section, click on \nCreate\n tab.\n\n\n\n\nMachine name should be posted on the actual machine so that the user can match during the data entry.\n\n\nStatus has \n\n\nON \n\n\nOFF (shut down to save power)\n\n\nBORKEN (currently fixing on the issues)\n\n\nNOT_IN_USE (No longer used or deprecated)\n\n\n\n\n\n\nTeam Request\n uses all the machine except the ones with the \nNOT_IN_USE\n status.\n\n\nMachine photo field is optional.\n\n\nScheduled Assemblers\n is the total number of assemblers to be used in the \nTeam Request\n process a.k.a. scheduling.\n\n\nLead to Machine Ratio\n is the ratio of how many machines that you want to assign to a lead. Example: 1-2 means \none lead - two machines\n. \n\n\n\n\n\n\nUpdate Machine\n\n\nClick on the \npencil\n icon to edit a machine details.\n\n\n\n\nDelete Machine\n\n\nClick on the bin icon to delete a machine.\n\n\n\n\nList Machine\n\n\nList all the Machines. There are some important columns to notice:\n\n\n\n\nScheduled Assemblers\n Column\n\n\n\n\nThis column shows the number of scheduled assemblers (workers). The \nTeam Request\n [Employees \n Team Request] uses this number to form a team. \nx2\n means two assemblers will be assigned to that machine.\n\n\n\n\nOrders\n Column\n\n\n\n\nThis column shows the number of assemblers of the current \nIN_PROGRESS\n order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.\n\n\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is overstaff.\n\n\nIf \nScheduled Assemblers\n \n \nOrders\n xN counts, that means the machine is understaff.", 
             "title": "Machine Setup"
         }, 
         {
@@ -77,7 +72,7 @@
         }, 
         {
             "location": "/machine/#update-machine", 
-            "text": "Click on the pencial icon to edit a machine details.", 
+            "text": "Click on the  pencil  icon to edit a machine details.", 
             "title": "Update Machine"
         }, 
         {
@@ -89,6 +84,31 @@
             "location": "/machine/#list-machine", 
             "text": "List all the Machines. There are some important columns to notice:   Scheduled Assemblers  Column   This column shows the number of scheduled assemblers (workers). The  Team Request  [Employees   Team Request] uses this number to form a team.  x2  means two assemblers will be assigned to that machine.   Orders  Column   This column shows the number of assemblers of the current  IN_PROGRESS  order, excluding lead, required by the product. Once the order is completed, the product icon will be disappeared.   If  Scheduled Assemblers     Orders  xN counts, that means the machine is overstaff.  If  Scheduled Assemblers     Orders  xN counts, that means the machine is understaff.", 
             "title": "List Machine"
+        }, 
+        {
+            "location": "/color/", 
+            "text": "Color\n\n\nOne of the aspects of product is color. Therefore, colors should be created first before product.\n\n\nAdd New Color\n\n\nTo add new color, click the \nCreate\n tab in the Color section. Then, select color by clicking the color bar and give the color name you like. Finally, click \nSave\n.\n\n\n\n\nView, Edit, and Delete\n\n\n\n\nClick \neye\n icon for viewing a color details.\n\n\nClick \npencil\n icon for editing a color.\n\n\nClick \nbin\n icon for deleting a color.\n\n\n\n\nMulti-Delete\n\n\nIf you want to delete multiple items, select each one and click \nWith Selected \n Delete\n link.", 
+            "title": "Color Setup"
+        }, 
+        {
+            "location": "/color/#color", 
+            "text": "One of the aspects of product is color. Therefore, colors should be created first before product.", 
+            "title": "Color"
+        }, 
+        {
+            "location": "/color/#add-new-color", 
+            "text": "To add new color, click the  Create  tab in the Color section. Then, select color by clicking the color bar and give the color name you like. Finally, click  Save .", 
+            "title": "Add New Color"
+        }, 
+        {
+            "location": "/color/#view-edit-and-delete", 
+            "text": "Click  eye  icon for viewing a color details.  Click  pencil  icon for editing a color.  Click  bin  icon for deleting a color.", 
+            "title": "View, Edit, and Delete"
+        }, 
+        {
+            "location": "/color/#multi-delete", 
+            "text": "If you want to delete multiple items, select each one and click  With Selected   Delete  link.", 
+            "title": "Multi-Delete"
         }, 
         {
             "location": "/product/", 
@@ -112,13 +132,13 @@
         }, 
         {
             "location": "/user/", 
-            "text": "Users and Roles\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
+            "text": "User and Role\n\n\nUser List\n\n\n\n\nView all users.\n\n\n\n\nGo to Employees \n User", 
             "title": "User Setup"
         }, 
         {
-            "location": "/user/#users-and-roles", 
+            "location": "/user/#user-and-role", 
             "text": "", 
-            "title": "Users and Roles"
+            "title": "User and Role"
         }, 
         {
             "location": "/user/#user-list", 
@@ -137,13 +157,13 @@
         }, 
         {
             "location": "/order/", 
-            "text": "Orders and Production Entries\n\n\n1. Check Orders\n\n\nOnce you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.\n\n\nBefore you create a new Production Entry, first view the order list and check for \n\n\n\n\nOrder Id\n\n\nOrder with the 'NEW' Status\n\n\nOrder with no production entries\n\n\n\n\nYou may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the \nIN_PROGRESS\n orders is:\n\n\n\n\nThe order is still \nIN_PROGRESS\n when a Shift is ended.\n\n\n\n\n\n\nIn the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. \n\n\nIn the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.\n\n\n\n\nThe production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.\n\n\n\n\n2. Create Production Entries\n\n\nNow, click on \nProduction Entry\n tab from the menu bar and see the existing production entries.\n\n\nIdeally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:\n\n\n\n\nThe \nIN_PROGRESS\n orders with carryover from the previous shift.\n\n\nThe \nNEW\n orders based on the order id in ascending order: 1, 2, 3, etc..\n\n\n\n\nClick \nCreate\n tab to creat a new production entry. In the new production entry form:\n\n\n\n\nSelect current shift\n\n\nSelect the order\n\n\nSelect team lead name who is currently assigned to the machine.\n\n\nSelect all team members who are currently assigned to the machine.\n\n\nFinally, click \nSave\n.\n\n\n\n\n\n\nRepeat the same steps for all the orders that you want to process for the current shift.\n\n\nCreate Order Video\n\n\n3. Update Production Entries\n\n\nBefore you update a production entry, check \nRemaning\n count first. Click edit button :black_nib: on the production entry that you are going to update.\n\n\nUpdate hourly number of good and number of bad in comma-separated format: \n100,125,110\n\n\n\n\nUpdate Production Entries Video", 
+            "text": "Order and Production Entry\n\n\n1. Check Orders\n\n\nOnce you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.\n\n\nBefore you create a new Production Entry, first view the order list and check for \n\n\n\n\nOrder Id\n\n\nOrder with the 'NEW' Status\n\n\nOrder with no production entries\n\n\n\n\nYou may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the \nIN_PROGRESS\n orders is:\n\n\n\n\nThe order is still \nIN_PROGRESS\n when a Shift is ended.\n\n\n\n\n\n\nIn the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. \n\n\nIn the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.\n\n\n\n\nThe production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.\n\n\n\n\n2. Create Production Entries\n\n\nNow, click on \nProduction Entry\n tab from the menu bar and see the existing production entries.\n\n\nIdeally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:\n\n\n\n\nThe \nIN_PROGRESS\n orders with carryover from the previous shift.\n\n\nThe \nNEW\n orders based on the order id in ascending order: 1, 2, 3, etc..\n\n\n\n\nClick \nCreate\n tab to creat a new production entry. In the new production entry form:\n\n\n\n\nSelect current shift\n\n\nSelect the order\n\n\nSelect team lead name who is currently assigned to the machine.\n\n\nSelect all team members who are currently assigned to the machine.\n\n\nFinally, click \nSave\n.\n\n\n\n\n\n\nRepeat the same steps for all the orders that you want to process for the current shift.\n\n\nCreate Order Video\n\n\n3. Update Production Entries\n\n\nBefore you update a production entry, check \nRemaning\n count first. Click edit button :black_nib: on the production entry that you are going to update.\n\n\nUpdate hourly number of good and number of bad in comma-separated format: \n100,125,110\n\n\n\n\nUpdate Production Entries Video", 
             "title": "Order and Production Entry"
         }, 
         {
-            "location": "/order/#orders-and-production-entries", 
+            "location": "/order/#order-and-production-entry", 
             "text": "", 
-            "title": "Orders and Production Entries"
+            "title": "Order and Production Entry"
         }, 
         {
             "location": "/order/#1-check-orders", 
