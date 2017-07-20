@@ -151,6 +151,32 @@
             <div class="section">
               
                 <h1 id="database-backup">Database Backup</h1>
+<p>Whenever you want to backup the existing database, you can run this backup command and later transfer it to an external drive.</p>
+<ul>
+<li>
+<p>Open a new Terminal to run these commands:</p>
+</li>
+<li>
+<p>[1] Check the current path to make sure it's in <code>/home/cedar</code></p>
+</li>
+</ul>
+<pre><code class="sh">cedar@ubuntu:~$ pwd
+</code></pre>
+
+<ul>
+<li>[2] Run the backup script.</li>
+</ul>
+<pre><code class="sh">cedar@ubuntu:~$ python app/prod-mgmt/app/db_backup.py ~/app/prod-mgmt/prod-mgmt.db ~/backup/
+</code></pre>
+
+<ul>
+<li>[3] A backup file will be saved into /home/cedar/backup/prod-mgmt.db-{date}-{time}. You can check via the <code>ls</code> command as below:</li>
+</ul>
+<pre><code class="sh">cedar@ubuntu:~$ ls ~/backup/
+</code></pre>
+
+<p><img alt="" src="../img/db-backup.png" /></p>
+<p>If you want to copy the backup file to an external USB dirve, click the <code>Files</code> drawer icon to open the system hard drive. Then, click on the <code>backup</code> folder. Finally, drag prod-mgmt.db-{date}-{time} file to USB drive as shown in the diagram.</p>
               
             </div>
           </div>
