@@ -99,6 +99,14 @@
 
     
     <url>
+     <loc>/export/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/db/</loc>
      <lastmod>2017-07-19</lastmod>
      <changefreq>daily</changefreq>

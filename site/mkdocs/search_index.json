@@ -276,6 +276,16 @@
             "title": "Dashboard"
         }, 
         {
+            "location": "/export/", 
+            "text": "Data Export\n\n\nData from any table can be exported to a CSV file which can be opened in Excel spreadsheet.\n\n\nClick \nExport\n tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.\n\n\nExample: Exporting a schedule team list into a CSV file.", 
+            "title": "Data Export"
+        }, 
+        {
+            "location": "/export/#data-export", 
+            "text": "Data from any table can be exported to a CSV file which can be opened in Excel spreadsheet.  Click  Export  tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.  Example: Exporting a schedule team list into a CSV file.", 
+            "title": "Data Export"
+        }, 
+        {
             "location": "/db/", 
             "text": "Database Backup\n\n\nWhenever you want to backup the existing database, you can run this backup command and later transfer it to an external drive.\n\n\n\n\n\n\nOpen a new Terminal to run these commands:\n\n\n\n\n\n\n[1] Check the current path to make sure it's in \n/home/cedar\n\n\n\n\n\n\ncedar@ubuntu:~$ pwd\n\n\n\n\n\n\n[2] Run the backup script.\n\n\n\n\ncedar@ubuntu:~$ python app/prod-mgmt/app/db_backup.py ~/app/prod-mgmt/prod-mgmt.db ~/backup/\n\n\n\n\n\n\n[3] A backup file will be saved into /home/cedar/backup/prod-mgmt.db-{date}-{time}. You can check via the \nls\n command as below:\n\n\n\n\ncedar@ubuntu:~$ ls ~/backup/\n\n\n\n\n\n\nIf you want to copy the backup file to an external USB dirve, click the \nFiles\n drawer icon to open the system hard drive. Then, click on the \nbackup\n folder. Finally, drag prod-mgmt.db-{date}-{time} file to USB drive as shown in the diagram.", 
             "title": "Database Backup"

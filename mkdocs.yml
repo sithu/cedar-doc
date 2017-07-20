@@ -17,6 +17,7 @@ pages:
 - ['order.md', 'Order and Production Entry']
 - ['history.md', 'History for Reporting']
 - ['dashboard.md', 'Dashboard']
+- ['export.md', 'Data Export']
 - ['db.md', 'Database Backup']
 
 
