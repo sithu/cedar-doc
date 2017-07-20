@@ -242,13 +242,28 @@
         }, 
         {
             "location": "/history/", 
-            "text": "Histroy", 
+            "text": "History\n\n\n1. Order History\n\n\nHistory\n \n \nOrder\n\n\nAs soon as an order is completed, the completed order (\nCOMPLETED\n) will be moved to the order history. Both \nOrder\n and \nProduction Entry\n maintain the \nNEW\n AND \nIN_PROGRESS\n order list. However, the order history shows all orders including \nNEW\n and \nIN_PROGRESS\n.\n\n\n\n\n2. Production Entry History\n\n\nHistory\n \n \nProduction Entry\n\n\nLikewise to order, all production entries for a completed project will be moved to the production entry history. The production entry with the \nIN_PROGRESS\n orders will remain in regular the \nProduction Entry\n list.\n\n\n3. Team\n\n\nHistory\n \n \nTeam\n\n\nAll past teams (schedules) will be saved into team history.", 
             "title": "History for Reporting"
         }, 
         {
-            "location": "/history/#histroy", 
+            "location": "/history/#history", 
             "text": "", 
-            "title": "Histroy"
+            "title": "History"
+        }, 
+        {
+            "location": "/history/#1-order-history", 
+            "text": "History     Order  As soon as an order is completed, the completed order ( COMPLETED ) will be moved to the order history. Both  Order  and  Production Entry  maintain the  NEW  AND  IN_PROGRESS  order list. However, the order history shows all orders including  NEW  and  IN_PROGRESS .", 
+            "title": "1. Order History"
+        }, 
+        {
+            "location": "/history/#2-production-entry-history", 
+            "text": "History     Production Entry  Likewise to order, all production entries for a completed project will be moved to the production entry history. The production entry with the  IN_PROGRESS  orders will remain in regular the  Production Entry  list.", 
+            "title": "2. Production Entry History"
+        }, 
+        {
+            "location": "/history/#3-team", 
+            "text": "History     Team  All past teams (schedules) will be saved into team history.", 
+            "title": "3. Team"
         }, 
         {
             "location": "/dashboard/", 
@@ -262,12 +277,12 @@
         }, 
         {
             "location": "/db/", 
-            "text": "Database Backup", 
+            "text": "Database Backup\n\n\nWhenever you want to backup the existing database, you can run this backup command and later transfer it to an external drive.\n\n\n\n\n\n\nOpen a new Terminal to run these commands:\n\n\n\n\n\n\n[1] Check the current path to make sure it's in \n/home/cedar\n\n\n\n\n\n\ncedar@ubuntu:~$ pwd\n\n\n\n\n\n\n[2] Run the backup script.\n\n\n\n\ncedar@ubuntu:~$ python app/prod-mgmt/app/db_backup.py ~/app/prod-mgmt/prod-mgmt.db ~/backup/\n\n\n\n\n\n\n[3] A backup file will be saved into /home/cedar/backup/prod-mgmt.db-{date}-{time}. You can check via the \nls\n command as below:\n\n\n\n\ncedar@ubuntu:~$ ls ~/backup/\n\n\n\n\n\n\nIf you want to copy the backup file to an external USB dirve, click the \nFiles\n drawer icon to open the system hard drive. Then, click on the \nbackup\n folder. Finally, drag prod-mgmt.db-{date}-{time} file to USB drive as shown in the diagram.", 
             "title": "Database Backup"
         }, 
         {
             "location": "/db/#database-backup", 
-            "text": "", 
+            "text": "Whenever you want to backup the existing database, you can run this backup command and later transfer it to an external drive.    Open a new Terminal to run these commands:    [1] Check the current path to make sure it's in  /home/cedar    cedar@ubuntu:~$ pwd   [2] Run the backup script.   cedar@ubuntu:~$ python app/prod-mgmt/app/db_backup.py ~/app/prod-mgmt/prod-mgmt.db ~/backup/   [3] A backup file will be saved into /home/cedar/backup/prod-mgmt.db-{date}-{time}. You can check via the  ls  command as below:   cedar@ubuntu:~$ ls ~/backup/   If you want to copy the backup file to an external USB dirve, click the  Files  drawer icon to open the system hard drive. Then, click on the  backup  folder. Finally, drag prod-mgmt.db-{date}-{time} file to USB drive as shown in the diagram.", 
             "title": "Database Backup"
         }
     ]
