@@ -213,7 +213,7 @@
         {
             "location": "/order/", 
             "text": "Order and Production Entry\n\n\n1. Add Order\n\n\nOrder\n \n \nCreate\n tab\n\n\n\n\nWhen you create a new order, you can name order with product name like Chair and order quantity so that we can easily track in dashboard. Example: Chair x 1000 Order\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nString\n\n\nOrder name\n\n\n\n\n\n\nProduct\n\n\nProduct\n\n\nProduct selection\n\n\n\n\n\n\nQuantity\n\n\nInteger [ x \n 0 ]\n\n\nOrder quantity\n\n\n\n\n\n\nAssigned Machine\n\n\nMachine\n\n\nIf you want to override the default machine set by the product (Create Product), you can assign any machine. The default machine from product will be used if you leave it as blank.\n\n\n\n\n\n\nNote\n\n\nString\n\n\nA note to the order\n\n\n\n\n\n\n\n\n2. Check Order before Adding Production Entry\n\n\nOnce you have setup Machine, Color, Product, Shift, User, and Team; you can now start processing orders by creating a production entry for each order per machine.\n\n\nBefore you create a new Production Entry, first view the order list and check for \n\n\n\n\nOrder Id\n\n\nOrder with the 'NEW' Status\n\n\nOrder with no production entries\n\n\n\n\nYou may want to create new production entries for the new Orders without production entry. The only condition you want to create another production entry for the \nIN_PROGRESS\n orders is:\n\n\n\n\nThe order is still \nIN_PROGRESS\n when a Shift is ended.\n\n\n\n\n\n\nIn the above list, you will see that Order Id 1 and 2 already have production entries (Id: 1 and 2), but their status is still 'NEW'. Why? It is because the someone has created production entries and they have not started the production yet. \n\n\nIn the Order Id 3 and 4, there is no production entry and these orders are the ones that you need to create production entries for current shift with the assiged team for the assigned machine Id.\n\n\n\n\nThe production Entry creation should happen at the assigned machine for a given order while meeting the scheduled team.\n\n\n\n\n3. Create Production Entries\n\n\nNow, click on \nProduction Entry\n tab from the menu bar and see the existing production entries.\n\n\nIdeally, this production entry creation process can be done by a manager or lead who will walk down the machine lanes and create production entires for the orders with these conditions:\n\n\n\n\nThe \nIN_PROGRESS\n orders with carryover from the previous shift.\n\n\nThe \nNEW\n orders based on the order id in ascending order: 1, 2, 3, etc..\n\n\n\n\nClick \nCreate\n tab to creat a new production entry. In the new production entry form:\n\n\n\n\nSelect current shift\n\n\nSelect the order\n\n\nSelect team lead name who is currently assigned to the machine.\n\n\nSelect all team members who are currently assigned to the machine.\n\n\nFinally, click \nSave\n.\n\n\n\n\n\n\nRepeat the same steps for all the orders that you want to process for the current shift.\n\n\nCreate Order Video\n\n\n4. Update Production Entries\n\n\nBefore you update a production entry, check \nRemaning\n count first. Click edit button :black_nib: on the production entry that you are going to update.\n\n\nUpdate hourly number of good and number of bad in comma-separated format: \n100,125,110\n\n\n\n\nUpdate Production Entries Video", 
-            "title": "Order and Production Entry"
+            "title": "Order & Production Entry"
         }, 
         {
             "location": "/order/#order-and-production-entry", 
@@ -276,13 +276,38 @@
             "title": "Dashboard"
         }, 
         {
+            "location": "/sort-filter/", 
+            "text": "Sorting and Filtering\n\n\nSorting\n\n\nAny blue clickable column names are sortable. For instance, \n\n\n \n\n\nIn the above table, the \nId\n, \nShift\n, \nDate\n, and \nOrder\n columns are sortable.\n\n\nFiltering\n\n\nAdd Filter\n \n [Column Name]\n\n\nFilters can be used to filter and search records based on one or more criteria.\n\n\n\n\nExample: filter any production entries with the number of bad is greater than 10.\n\n\n\n\n\n\n\n\nSearch Result", 
+            "title": "Sorting & Filtering"
+        }, 
+        {
+            "location": "/sort-filter/#sorting-and-filtering", 
+            "text": "", 
+            "title": "Sorting and Filtering"
+        }, 
+        {
+            "location": "/sort-filter/#sorting", 
+            "text": "Any blue clickable column names are sortable. For instance,      In the above table, the  Id ,  Shift ,  Date , and  Order  columns are sortable.", 
+            "title": "Sorting"
+        }, 
+        {
+            "location": "/sort-filter/#filtering", 
+            "text": "Add Filter    [Column Name]  Filters can be used to filter and search records based on one or more criteria.   Example: filter any production entries with the number of bad is greater than 10.", 
+            "title": "Filtering"
+        }, 
+        {
+            "location": "/sort-filter/#search-result", 
+            "text": "", 
+            "title": "Search Result"
+        }, 
+        {
             "location": "/export/", 
-            "text": "Data Export\n\n\nData from any table can be exported to a CSV file which can be opened in Excel spreadsheet.\n\n\nClick \nExport\n tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.\n\n\nExample: Exporting a schedule team list into a CSV file.", 
+            "text": "Data Export\n\n\nData from any table can be exported to a CSV file which is accessible from Microsoft Excel.\n\n\nClick \nExport\n tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.\n\n\nExample: Exporting a schedule team list into a CSV file.", 
             "title": "Data Export"
         }, 
         {
             "location": "/export/#data-export", 
-            "text": "Data from any table can be exported to a CSV file which can be opened in Excel spreadsheet.  Click  Export  tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.  Example: Exporting a schedule team list into a CSV file.", 
+            "text": "Data from any table can be exported to a CSV file which is accessible from Microsoft Excel.  Click  Export  tab on a table that you want to export and a CSV file will be downloaded into browser's download folder.  Example: Exporting a schedule team list into a CSV file.", 
             "title": "Data Export"
         }, 
         {
