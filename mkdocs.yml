@@ -14,9 +14,10 @@ pages:
 - ['role.md', 'Role']
 - ['user.md', 'User']
 - ['team.md', 'Team (Schedule)']
-- ['order.md', 'Order and Production Entry']
+- ['order.md', 'Order & Production Entry']
 - ['history.md', 'History for Reporting']
 - ['dashboard.md', 'Dashboard']
+- ['sort-filter.md', 'Sorting & Filtering']
 - ['export.md', 'Data Export']
 - ['db.md', 'Database Backup']
 
